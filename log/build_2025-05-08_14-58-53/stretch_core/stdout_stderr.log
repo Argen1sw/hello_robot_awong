@@ -1,0 +1,27 @@
+running egg_info
+writing ../../../build/stretch_core/stretch_core.egg-info/PKG-INFO
+writing dependency_links to ../../../build/stretch_core/stretch_core.egg-info/dependency_links.txt
+writing entry points to ../../../build/stretch_core/stretch_core.egg-info/entry_points.txt
+writing requirements to ../../../build/stretch_core/stretch_core.egg-info/requires.txt
+writing top-level names to ../../../build/stretch_core/stretch_core.egg-info/top_level.txt
+reading manifest file '../../../build/stretch_core/stretch_core.egg-info/SOURCES.txt'
+adding license file 'LICENSE.md'
+writing manifest file '../../../build/stretch_core/stretch_core.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/hello-robot/hello_robot_awong/install/stretch_core/lib/python3.10/site-packages/stretch_core-0.2.0-py3.10.egg-info' (and everything under it)
+Copying ../../../build/stretch_core/stretch_core.egg-info to /home/hello-robot/hello_robot_awong/install/stretch_core/lib/python3.10/site-packages/stretch_core-0.2.0-py3.10.egg-info
+running install_scripts
+Installing align_to_aruco script to /home/hello-robot/hello_robot_awong/install/stretch_core/lib/stretch_core
+Installing avoider script to /home/hello-robot/hello_robot_awong/install/stretch_core/lib/stretch_core
+Installing d435i_accel_correction script to /home/hello-robot/hello_robot_awong/install/stretch_core/lib/stretch_core
+Installing detect_aruco_markers script to /home/hello-robot/hello_robot_awong/install/stretch_core/lib/stretch_core
+Installing keyboard_teleop script to /home/hello-robot/hello_robot_awong/install/stretch_core/lib/stretch_core
+Installing remote_gamepad script to /home/hello-robot/hello_robot_awong/install/stretch_core/lib/stretch_core
+Installing stretch_driver script to /home/hello-robot/hello_robot_awong/install/stretch_core/lib/stretch_core
+Installing usb_cam script to /home/hello-robot/hello_robot_awong/install/stretch_core/lib/stretch_core
+writing list of installed files to '/home/hello-robot/hello_robot_awong/build/stretch_core/install.log'

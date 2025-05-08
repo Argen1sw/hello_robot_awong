@@ -1,0 +1,27 @@
+running egg_info
+writing ../../../build/stretch_calibration/stretch_calibration.egg-info/PKG-INFO
+writing dependency_links to ../../../build/stretch_calibration/stretch_calibration.egg-info/dependency_links.txt
+writing entry points to ../../../build/stretch_calibration/stretch_calibration.egg-info/entry_points.txt
+writing requirements to ../../../build/stretch_calibration/stretch_calibration.egg-info/requires.txt
+writing top-level names to ../../../build/stretch_calibration/stretch_calibration.egg-info/top_level.txt
+reading manifest file '../../../build/stretch_calibration/stretch_calibration.egg-info/SOURCES.txt'
+adding license file 'LICENSE.md'
+writing manifest file '../../../build/stretch_calibration/stretch_calibration.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/hello-robot/hello_robot_awong/install/stretch_calibration/lib/python3.10/site-packages/stretch_calibration-0.2.0-py3.10.egg-info' (and everything under it)
+Copying ../../../build/stretch_calibration/stretch_calibration.egg-info to /home/hello-robot/hello_robot_awong/install/stretch_calibration/lib/python3.10/site-packages/stretch_calibration-0.2.0-py3.10.egg-info
+running install_scripts
+Installing check_head_calibration script to /home/hello-robot/hello_robot_awong/install/stretch_calibration/lib/stretch_calibration
+Installing collect_head_calibration_data script to /home/hello-robot/hello_robot_awong/install/stretch_calibration/lib/stretch_calibration
+Installing process_head_calibration_data script to /home/hello-robot/hello_robot_awong/install/stretch_calibration/lib/stretch_calibration
+Installing revert_to_previous_calibration script to /home/hello-robot/hello_robot_awong/install/stretch_calibration/lib/stretch_calibration
+Installing update_uncalibrated_urdf script to /home/hello-robot/hello_robot_awong/install/stretch_calibration/lib/stretch_calibration
+Installing update_urdf_after_xacro_change script to /home/hello-robot/hello_robot_awong/install/stretch_calibration/lib/stretch_calibration
+Installing update_with_most_recent_calibration script to /home/hello-robot/hello_robot_awong/install/stretch_calibration/lib/stretch_calibration
+Installing visualize_most_recent_head_calibration script to /home/hello-robot/hello_robot_awong/install/stretch_calibration/lib/stretch_calibration
+writing list of installed files to '/home/hello-robot/hello_robot_awong/build/stretch_calibration/install.log'

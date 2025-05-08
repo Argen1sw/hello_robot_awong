@@ -1,0 +1,61 @@
+[3.046s] Invoking command in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_demos': PYTHONPATH=/home/hello-robot/hello_robot_awong/build/stretch_demos/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/stretch_demos build --build-base /home/hello-robot/hello_robot_awong/build/stretch_demos/build install --record /home/hello-robot/hello_robot_awong/build/stretch_demos/install.log --single-version-externally-managed install_data
+[3.787s] running egg_info
+[3.788s] creating ../../../build/stretch_demos/stretch_demos.egg-info
+[3.789s] writing ../../../build/stretch_demos/stretch_demos.egg-info/PKG-INFO
+[3.789s] writing dependency_links to ../../../build/stretch_demos/stretch_demos.egg-info/dependency_links.txt
+[3.789s] writing entry points to ../../../build/stretch_demos/stretch_demos.egg-info/entry_points.txt
+[3.790s] writing requirements to ../../../build/stretch_demos/stretch_demos.egg-info/requires.txt
+[3.790s] writing top-level names to ../../../build/stretch_demos/stretch_demos.egg-info/top_level.txt
+[3.790s] writing manifest file '../../../build/stretch_demos/stretch_demos.egg-info/SOURCES.txt'
+[3.794s] reading manifest file '../../../build/stretch_demos/stretch_demos.egg-info/SOURCES.txt'
+[3.794s] adding license file 'LICENSE.md'
+[3.796s] writing manifest file '../../../build/stretch_demos/stretch_demos.egg-info/SOURCES.txt'
+[3.796s] running build
+[3.796s] running build_py
+[3.797s] creating /home/hello-robot/hello_robot_awong/build/stretch_demos/build
+[3.797s] creating /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib
+[3.797s] creating /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos
+[3.797s] copying stretch_demos/__init__.py -> /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos
+[3.797s] copying stretch_demos/clean_surface.py -> /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos
+[3.797s] copying stretch_demos/handover_object.py -> /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos
+[3.798s] copying stretch_demos/hello_world.py -> /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos
+[3.798s] copying stretch_demos/open_drawer.py -> /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos
+[3.798s] copying stretch_demos/grasp_object.py -> /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos
+[3.799s] running install
+[3.799s] running install_lib
+[3.801s] creating /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos
+[3.802s] copying /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos/__init__.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos
+[3.802s] copying /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos/clean_surface.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos
+[3.802s] copying /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos/handover_object.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos
+[3.802s] copying /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos/hello_world.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos
+[3.802s] copying /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos/open_drawer.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos
+[3.803s] copying /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos/grasp_object.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos
+[3.804s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos/__init__.py to __init__.cpython-310.pyc
+[3.805s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos/clean_surface.py to clean_surface.cpython-310.pyc
+[3.808s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos/handover_object.py to handover_object.cpython-310.pyc
+[3.810s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos/hello_world.py to hello_world.cpython-310.pyc
+[3.813s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos/open_drawer.py to open_drawer.cpython-310.pyc
+[3.816s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos/grasp_object.py to grasp_object.cpython-310.pyc
+[3.818s] running install_data
+[3.818s] creating /home/hello-robot/hello_robot_awong/install/stretch_demos/share/ament_index
+[3.819s] creating /home/hello-robot/hello_robot_awong/install/stretch_demos/share/ament_index/resource_index
+[3.819s] creating /home/hello-robot/hello_robot_awong/install/stretch_demos/share/ament_index/resource_index/packages
+[3.819s] copying resource/stretch_demos -> /home/hello-robot/hello_robot_awong/install/stretch_demos/share/ament_index/resource_index/packages
+[3.819s] copying package.xml -> /home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos
+[3.819s] creating /home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/launch
+[3.820s] copying launch/hello_world.launch.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/launch
+[3.820s] copying launch/clean_surface.launch.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/launch
+[3.820s] copying launch/grasp_object.launch.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/launch
+[3.820s] copying launch/handover_object.launch.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/launch
+[3.820s] copying launch/open_drawer.launch.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/launch
+[3.820s] creating /home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/rviz
+[3.821s] running install_egg_info
+[3.825s] Copying ../../../build/stretch_demos/stretch_demos.egg-info to /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos-0.0.0-py3.10.egg-info
+[3.827s] running install_scripts
+[3.879s] Installing clean_surface script to /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/stretch_demos
+[3.880s] Installing grasp_object script to /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/stretch_demos
+[3.880s] Installing handover_object script to /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/stretch_demos
+[3.880s] Installing hello_world script to /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/stretch_demos
+[3.881s] Installing open_drawer script to /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/stretch_demos
+[3.881s] writing list of installed files to '/home/hello-robot/hello_robot_awong/build/stretch_demos/install.log'
+[4.286s] Invoked command in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_demos' returned '0': PYTHONPATH=/home/hello-robot/hello_robot_awong/build/stretch_demos/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/stretch_demos build --build-base /home/hello-robot/hello_robot_awong/build/stretch_demos/build install --record /home/hello-robot/hello_robot_awong/build/stretch_demos/install.log --single-version-externally-managed install_data

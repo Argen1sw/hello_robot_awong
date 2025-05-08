@@ -1,0 +1,138 @@
+[0.540s] Invoking command in '/home/hello-robot/hello_robot_awong/build/stretch_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hello-robot/ament_ws/install/tf2_web_republisher_py:/home/hello-robot/ament_ws/install/stretch_ros_tutorials:/home/hello-robot/ament_ws/install/stretch_funmap:/home/hello-robot/ament_ws/install/stretch_calibration:/home/hello-robot/ament_ws/install/stretch_demos:/home/hello-robot/ament_ws/install/stretch_deep_perception:/home/hello-robot/ament_ws/install/stretch_core:/home/hello-robot/ament_ws/install/respeaker_ros2:/home/hello-robot/ament_ws/install/hello_helpers:/opt/ros/humble /usr/bin/cmake /home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_description -DCMAKE_INSTALL_PREFIX=/home/hello-robot/hello_robot_awong/install/stretch_description
+[2.056s] -- The C compiler identification is GNU 11.4.0
+[2.057s] -- The CXX compiler identification is GNU 11.4.0
+[2.058s] -- Detecting C compiler ABI info
+[2.059s] -- Detecting C compiler ABI info - done
+[2.059s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.059s] -- Detecting C compile features
+[2.059s] -- Detecting C compile features - done
+[2.060s] -- Detecting CXX compiler ABI info
+[2.060s] -- Detecting CXX compiler ABI info - done
+[2.060s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.060s] -- Detecting CXX compile features
+[2.060s] -- Detecting CXX compile features - done
+[2.061s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.061s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.062s] -- Configuring done
+[2.062s] -- Generating done
+[2.062s] -- Build files have been written to: /home/hello-robot/hello_robot_awong/build/stretch_description
+[2.067s] Invoked command in '/home/hello-robot/hello_robot_awong/build/stretch_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hello-robot/ament_ws/install/tf2_web_republisher_py:/home/hello-robot/ament_ws/install/stretch_ros_tutorials:/home/hello-robot/ament_ws/install/stretch_funmap:/home/hello-robot/ament_ws/install/stretch_calibration:/home/hello-robot/ament_ws/install/stretch_demos:/home/hello-robot/ament_ws/install/stretch_deep_perception:/home/hello-robot/ament_ws/install/stretch_core:/home/hello-robot/ament_ws/install/respeaker_ros2:/home/hello-robot/ament_ws/install/hello_helpers:/opt/ros/humble /usr/bin/cmake /home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_description -DCMAKE_INSTALL_PREFIX=/home/hello-robot/hello_robot_awong/install/stretch_description
+[2.068s] Invoking command in '/home/hello-robot/hello_robot_awong/build/stretch_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hello-robot/ament_ws/install/tf2_web_republisher_py:/home/hello-robot/ament_ws/install/stretch_ros_tutorials:/home/hello-robot/ament_ws/install/stretch_funmap:/home/hello-robot/ament_ws/install/stretch_calibration:/home/hello-robot/ament_ws/install/stretch_demos:/home/hello-robot/ament_ws/install/stretch_deep_perception:/home/hello-robot/ament_ws/install/stretch_core:/home/hello-robot/ament_ws/install/respeaker_ros2:/home/hello-robot/ament_ws/install/hello_helpers:/opt/ros/humble /usr/bin/cmake --build /home/hello-robot/hello_robot_awong/build/stretch_description -- -j8 -l8
+[2.145s] Invoked command in '/home/hello-robot/hello_robot_awong/build/stretch_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hello-robot/ament_ws/install/tf2_web_republisher_py:/home/hello-robot/ament_ws/install/stretch_ros_tutorials:/home/hello-robot/ament_ws/install/stretch_funmap:/home/hello-robot/ament_ws/install/stretch_calibration:/home/hello-robot/ament_ws/install/stretch_demos:/home/hello-robot/ament_ws/install/stretch_deep_perception:/home/hello-robot/ament_ws/install/stretch_core:/home/hello-robot/ament_ws/install/respeaker_ros2:/home/hello-robot/ament_ws/install/hello_helpers:/opt/ros/humble /usr/bin/cmake --build /home/hello-robot/hello_robot_awong/build/stretch_description -- -j8 -l8
+[2.165s] Invoking command in '/home/hello-robot/hello_robot_awong/build/stretch_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hello-robot/ament_ws/install/tf2_web_republisher_py:/home/hello-robot/ament_ws/install/stretch_ros_tutorials:/home/hello-robot/ament_ws/install/stretch_funmap:/home/hello-robot/ament_ws/install/stretch_calibration:/home/hello-robot/ament_ws/install/stretch_demos:/home/hello-robot/ament_ws/install/stretch_deep_perception:/home/hello-robot/ament_ws/install/stretch_core:/home/hello-robot/ament_ws/install/respeaker_ros2:/home/hello-robot/ament_ws/install/hello_helpers:/opt/ros/humble /usr/bin/cmake --install /home/hello-robot/hello_robot_awong/build/stretch_description
+[2.184s] -- Install configuration: ""
+[2.184s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes
+[2.185s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_aruco_right_base_collision.STL
+[2.185s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_respeaker.STL
+[2.185s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_aruco_inner_wrist.STL
+[2.186s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_gripper.STL
+[2.186s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_aruco_right_base.STL
+[2.186s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_lift_collision.STL
+[2.187s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_mast_collision.STL
+[2.187s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_arm_l3.STL
+[2.187s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_right_wheel.STL
+[2.190s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_straight_gripper_collision.STL
+[2.190s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/base_imu_collision.STL
+[2.190s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_aruco_left_base.STL
+[2.190s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_wrist_roll_collision.STL
+[2.191s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_left_wheel.STL
+[2.194s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/base_link.STL
+[2.195s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_wrist_yaw_collision.STL
+[2.195s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_aruco_left_base_collision.STL
+[2.195s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/base_imu.STL
+[2.195s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_head_collision.STL
+[2.196s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_wrist_yaw_bottom.STL
+[2.197s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_arm_l1_collision.STL
+[2.197s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_aruco_top_wrist_collision.STL
+[2.197s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/laser_collision.STL
+[2.198s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_gripper_finger_right_collision.STL
+[2.198s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/respeaker_base_collision.STL
+[2.198s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_arm_l4.STL
+[2.199s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_aruco_shoulder_collision.STL
+[2.199s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_lift.STL
+[2.200s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_wrist_pitch_collision.STL
+[2.200s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_head_tilt.STL
+[2.202s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_arm_l2.STL
+[2.202s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_aruco_top_wrist.STL
+[2.202s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_right_wheel_collision.STL
+[2.202s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/.gitkeep
+[2.203s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_head.STL
+[2.205s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_gripper_fingertip_left_collision.STL
+[2.208s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_mast.STL
+[2.208s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_gripper_fingertip_right_collision.STL
+[2.209s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_gripper_finger_left.STL
+[2.209s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_arm_l0.STL
+[2.209s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_wrist_pitch.STL
+[2.209s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_arm_l0_collision.STL
+[2.209s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_wrist_roll.STL
+[2.209s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_gripper_fingertip_right.STL
+[2.210s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_puller.STL
+[2.212s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/base_link_collision.STL
+[2.212s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_arm_l3_collision.STL
+[2.212s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_head_tilt_collision.STL
+[2.213s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_arm_l4_collision.STL
+[2.213s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/laser.STL
+[2.213s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_dry_erase_holder.STL
+[2.218s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_left_wheel_collision.STL
+[2.218s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/d435.dae
+[2.239s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_gripper_fingertip_left.STL
+[2.240s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_arm_l2_collision.STL
+[2.242s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_head_pan.STL
+[2.242s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/omni_wheel_m.STL
+[2.244s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_gripper_finger_left_collision.STL
+[2.244s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/respeaker_base.STL
+[2.245s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_head_pan_collision.STL
+[2.245s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_dry_erase_marker.STL
+[2.246s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_aruco_inner_wrist_collision.STL
+[2.246s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_gripper_collision.STL
+[2.246s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_wrist_yaw_bottom_collision.STL
+[2.246s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_gripper_finger_right.STL
+[2.247s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_wrist_yaw.STL
+[2.247s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_ground_collision.STL
+[2.247s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_straight_gripper.STL
+[2.253s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_arm_l1.STL
+[2.254s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/meshes/link_aruco_shoulder.STL
+[2.254s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf
+[2.254s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/stretch_dex_wrist.xacro
+[2.255s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/stretch_description_RE1V0_tool_stretch_gripper.xacro
+[2.255s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/stretch_gripper_with_puller.xacro
+[2.255s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/stretch_uncalibrated.urdf
+[2.255s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/export_urdf.sh
+[2.255s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/stretch_main.xacro
+[2.256s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/stretch_d435i.xacro
+[2.256s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/stretch_description_RE1V0_tool_stretch_dex_wrist.xacro
+[2.256s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/stretch_gripper.xacro
+[2.256s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/stretch_respeaker.xacro
+[2.257s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/stretch_description.xacro
+[2.257s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/d435i
+[2.257s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/d435i/_d435i.urdf.xacro
+[2.257s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/d435i/_usb_plug.urdf.xacro
+[2.257s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/d435i/_d435.urdf.xacro
+[2.258s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/d435i/_d435i_imu_modules.urdf.xacro
+[2.258s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/d435i/_materials.urdf.xacro
+[2.258s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/export_urdf_license_template.md
+[2.258s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/stretch.urdf
+[2.259s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/stretch_description_RE1V0_tool_none.xacro
+[2.259s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/stretch_aruco.xacro
+[2.259s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/stretch_laser_range_finder.xacro
+[2.259s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/urdf/stretch_base_imu.xacro
+[2.259s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/launch
+[2.260s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/launch/display.launch.py
+[2.260s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/rviz
+[2.260s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/rviz/stretch.rviz
+[2.260s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/ament_index/resource_index/package_run_dependencies/stretch_description
+[2.260s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/ament_index/resource_index/parent_prefix_path/stretch_description
+[2.261s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/environment/ament_prefix_path.sh
+[2.261s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/environment/ament_prefix_path.dsv
+[2.261s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/environment/path.sh
+[2.262s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/environment/path.dsv
+[2.262s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/local_setup.bash
+[2.262s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/local_setup.sh
+[2.262s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/local_setup.zsh
+[2.263s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/local_setup.dsv
+[2.263s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/package.dsv
+[2.263s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/ament_index/resource_index/packages/stretch_description
+[2.263s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/cmake/stretch_descriptionConfig.cmake
+[2.264s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/cmake/stretch_descriptionConfig-version.cmake
+[2.264s] -- Installing: /home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/package.xml
+[2.268s] Invoked command in '/home/hello-robot/hello_robot_awong/build/stretch_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hello-robot/ament_ws/install/tf2_web_republisher_py:/home/hello-robot/ament_ws/install/stretch_ros_tutorials:/home/hello-robot/ament_ws/install/stretch_funmap:/home/hello-robot/ament_ws/install/stretch_calibration:/home/hello-robot/ament_ws/install/stretch_demos:/home/hello-robot/ament_ws/install/stretch_deep_perception:/home/hello-robot/ament_ws/install/stretch_core:/home/hello-robot/ament_ws/install/respeaker_ros2:/home/hello-robot/ament_ws/install/hello_helpers:/opt/ros/humble /usr/bin/cmake --install /home/hello-robot/hello_robot_awong/build/stretch_description

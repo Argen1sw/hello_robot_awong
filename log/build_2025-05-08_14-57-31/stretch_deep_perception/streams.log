@@ -1,0 +1,99 @@
+[3.341s] Invoking command in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_deep_perception': PYTHONPATH=/home/hello-robot/hello_robot_awong/build/stretch_deep_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/stretch_deep_perception build --build-base /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build install --record /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/install.log --single-version-externally-managed install_data
+[3.850s] running egg_info
+[3.851s] creating ../../../build/stretch_deep_perception/stretch_deep_perception.egg-info
+[3.851s] writing ../../../build/stretch_deep_perception/stretch_deep_perception.egg-info/PKG-INFO
+[3.852s] writing dependency_links to ../../../build/stretch_deep_perception/stretch_deep_perception.egg-info/dependency_links.txt
+[3.852s] writing entry points to ../../../build/stretch_deep_perception/stretch_deep_perception.egg-info/entry_points.txt
+[3.852s] writing requirements to ../../../build/stretch_deep_perception/stretch_deep_perception.egg-info/requires.txt
+[3.852s] writing top-level names to ../../../build/stretch_deep_perception/stretch_deep_perception.egg-info/top_level.txt
+[3.853s] writing manifest file '../../../build/stretch_deep_perception/stretch_deep_perception.egg-info/SOURCES.txt'
+[3.856s] reading manifest file '../../../build/stretch_deep_perception/stretch_deep_perception.egg-info/SOURCES.txt'
+[3.856s] adding license file 'LICENSE.md'
+[3.858s] writing manifest file '../../../build/stretch_deep_perception/stretch_deep_perception.egg-info/SOURCES.txt'
+[3.858s] running build
+[3.858s] running build_py
+[3.858s] creating /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build
+[3.859s] creating /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib
+[3.859s] creating /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+[3.859s] copying stretch_deep_perception/test_body_landmark_detection_with_images.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+[3.859s] copying stretch_deep_perception/deep_learning_model_options.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+[3.859s] copying stretch_deep_perception/test_object_detection_with_images.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+[3.860s] copying stretch_deep_perception/__init__.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+[3.860s] copying stretch_deep_perception/detection_ros_markers.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+[3.860s] copying stretch_deep_perception/detect_body_landmarks.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+[3.860s] copying stretch_deep_perception/head_estimator.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+[3.861s] copying stretch_deep_perception/deep_models_shared.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+[3.861s] copying stretch_deep_perception/object_detect_pytorch.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+[3.861s] copying stretch_deep_perception/detection_node.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+[3.861s] copying stretch_deep_perception/detect_nearest_mouth.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+[3.861s] copying stretch_deep_perception/detect_objects.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+[3.861s] copying stretch_deep_perception/detection_2d_to_3d.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+[3.862s] copying stretch_deep_perception/test_head_estimation_with_images.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+[3.862s] copying stretch_deep_perception/body_landmark_detector.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+[3.862s] copying stretch_deep_perception/object_detector.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+[3.862s] copying stretch_deep_perception/detect_faces.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+[3.862s] copying stretch_deep_perception/numba_image_to_pointcloud.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+[3.863s] running install
+[3.864s] running install_lib
+[3.865s] creating /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+[3.865s] copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/test_body_landmark_detection_with_images.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+[3.865s] copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/deep_learning_model_options.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+[3.866s] copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/test_object_detection_with_images.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+[3.866s] copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/__init__.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+[3.866s] copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/detection_ros_markers.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+[3.866s] copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/detect_body_landmarks.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+[3.867s] copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/head_estimator.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+[3.867s] copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/deep_models_shared.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+[3.867s] copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/object_detect_pytorch.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+[3.867s] copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/detection_node.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+[3.867s] copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/detect_nearest_mouth.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+[3.868s] copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/detect_objects.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+[3.868s] copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/detection_2d_to_3d.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+[3.868s] copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/test_head_estimation_with_images.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+[3.868s] copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/body_landmark_detector.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+[3.868s] copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/object_detector.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+[3.869s] copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/detect_faces.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+[3.869s] copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/numba_image_to_pointcloud.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+[3.870s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/test_body_landmark_detection_with_images.py to test_body_landmark_detection_with_images.cpython-310.pyc
+[3.871s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/deep_learning_model_options.py to deep_learning_model_options.cpython-310.pyc
+[3.871s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/test_object_detection_with_images.py to test_object_detection_with_images.cpython-310.pyc
+[3.872s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/__init__.py to __init__.cpython-310.pyc
+[3.872s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/detection_ros_markers.py to detection_ros_markers.cpython-310.pyc
+[3.875s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/detect_body_landmarks.py to detect_body_landmarks.cpython-310.pyc
+[3.875s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/head_estimator.py to head_estimator.cpython-310.pyc
+[3.878s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/deep_models_shared.py to deep_models_shared.cpython-310.pyc
+[3.878s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/object_detect_pytorch.py to object_detect_pytorch.cpython-310.pyc
+[3.879s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/detection_node.py to detection_node.cpython-310.pyc
+[3.881s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/detect_nearest_mouth.py to detect_nearest_mouth.cpython-310.pyc
+[3.882s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/detect_objects.py to detect_objects.cpython-310.pyc
+[3.882s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/detection_2d_to_3d.py to detection_2d_to_3d.cpython-310.pyc
+[3.885s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/test_head_estimation_with_images.py to test_head_estimation_with_images.cpython-310.pyc
+[3.886s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/body_landmark_detector.py to body_landmark_detector.cpython-310.pyc
+[3.888s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/object_detector.py to object_detector.cpython-310.pyc
+[3.890s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/detect_faces.py to detect_faces.cpython-310.pyc
+[3.890s] byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/numba_image_to_pointcloud.py to numba_image_to_pointcloud.cpython-310.pyc
+[3.891s] running install_data
+[3.891s] creating /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/ament_index
+[3.891s] creating /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/ament_index/resource_index
+[3.892s] creating /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/ament_index/resource_index/packages
+[3.892s] copying resource/stretch_deep_perception -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/ament_index/resource_index/packages
+[3.892s] copying package.xml -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception
+[3.893s] creating /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/launch
+[3.893s] copying launch/stretch_detect_faces.launch.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/launch
+[3.893s] copying launch/stretch_detect_nearest_mouth.launch.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/launch
+[3.893s] copying launch/stretch_detect_body_landmarks.launch.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/launch
+[3.893s] copying launch/stretch_detect_objects.launch.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/launch
+[3.894s] creating /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/rviz
+[3.894s] copying rviz/nearest_mouth_detection.rviz -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/rviz
+[3.894s] copying rviz/face_detection.rviz -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/rviz
+[3.894s] copying rviz/object_detection.rviz -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/rviz
+[3.894s] copying rviz/body_landmark_detection.rviz -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/rviz
+[3.894s] running install_egg_info
+[3.897s] Copying ../../../build/stretch_deep_perception/stretch_deep_perception.egg-info to /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception-0.0.0-py3.10.egg-info
+[3.898s] running install_scripts
+[3.930s] Installing detect_body_landmarks script to /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/stretch_deep_perception
+[3.931s] Installing detect_faces script to /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/stretch_deep_perception
+[3.931s] Installing detect_nearest_mouth script to /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/stretch_deep_perception
+[3.931s] Installing detect_objects script to /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/stretch_deep_perception
+[3.932s] writing list of installed files to '/home/hello-robot/hello_robot_awong/build/stretch_deep_perception/install.log'
+[4.312s] Invoked command in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_deep_perception' returned '0': PYTHONPATH=/home/hello-robot/hello_robot_awong/build/stretch_deep_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/stretch_deep_perception build --build-base /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build install --record /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/install.log --single-version-externally-managed install_data

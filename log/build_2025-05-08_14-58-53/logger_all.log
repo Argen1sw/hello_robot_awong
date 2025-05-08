@@ -1,0 +1,638 @@
+[0.203s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.204s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7ec73511cb50>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ec7353bdf00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ec7353bdf00>>, mixin_verb=('build',))
+[0.542s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.542s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.542s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.542s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.542s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.542s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.542s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/hello-robot/hello_robot_awong'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2) by extension 'ignore'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2) by extension 'ignore_ament_install'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2) by extensions ['colcon_pkg']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2) by extension 'colcon_pkg'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2) by extensions ['colcon_meta']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2) by extension 'colcon_meta'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2) by extensions ['ros']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2) by extension 'ros'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2) by extensions ['cmake', 'python']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2) by extension 'cmake'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2) by extension 'python'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2) by extensions ['python_setup_py']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2) by extension 'python_setup_py'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs) by extension 'ignore'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs) by extension 'ignore_ament_install'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs) by extensions ['colcon_pkg']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs) by extension 'colcon_pkg'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs) by extensions ['colcon_meta']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs) by extension 'colcon_meta'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs) by extensions ['ros']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs) by extension 'ros'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs) by extensions ['cmake', 'python']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs) by extension 'cmake'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs) by extension 'python'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs) by extensions ['python_setup_py']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs) by extension 'python_setup_py'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs/images) by extensions ['ignore', 'ignore_ament_install']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs/images) by extension 'ignore'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs/images) by extension 'ignore_ament_install'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs/images) by extensions ['colcon_pkg']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs/images) by extension 'colcon_pkg'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs/images) by extensions ['colcon_meta']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs/images) by extension 'colcon_meta'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs/images) by extensions ['ros']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs/images) by extension 'ros'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs/images) by extensions ['cmake', 'python']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs/images) by extension 'cmake'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs/images) by extension 'python'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs/images) by extensions ['python_setup_py']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/docs/images) by extension 'python_setup_py'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/hello_helpers) by extensions ['ignore', 'ignore_ament_install']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/hello_helpers) by extension 'ignore'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/hello_helpers) by extension 'ignore_ament_install'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/hello_helpers) by extensions ['colcon_pkg']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/hello_helpers) by extension 'colcon_pkg'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/hello_helpers) by extensions ['colcon_meta']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/hello_helpers) by extension 'colcon_meta'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/hello_helpers) by extensions ['ros']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/hello_helpers) by extension 'ros'
+[0.565s] DEBUG:colcon.colcon_core.package_identification:Package 'src/stretch_ros2/hello_helpers' with type 'ros.ament_python' and name 'hello_helpers'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/images) by extensions ['ignore', 'ignore_ament_install']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/images) by extension 'ignore'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/images) by extension 'ignore_ament_install'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/images) by extensions ['colcon_pkg']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/images) by extension 'colcon_pkg'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/images) by extensions ['colcon_meta']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/images) by extension 'colcon_meta'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/images) by extensions ['ros']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/images) by extension 'ros'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/images) by extensions ['cmake', 'python']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/images) by extension 'cmake'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/images) by extension 'python'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/images) by extensions ['python_setup_py']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/images) by extension 'python_setup_py'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_calibration) by extensions ['ignore', 'ignore_ament_install']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_calibration) by extension 'ignore'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_calibration) by extension 'ignore_ament_install'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_calibration) by extensions ['colcon_pkg']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_calibration) by extension 'colcon_pkg'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_calibration) by extensions ['colcon_meta']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_calibration) by extension 'colcon_meta'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_calibration) by extensions ['ros']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_calibration) by extension 'ros'
+[0.568s] DEBUG:colcon.colcon_core.package_identification:Package 'src/stretch_ros2/stretch_calibration' with type 'ros.ament_python' and name 'stretch_calibration'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_core) by extensions ['ignore', 'ignore_ament_install']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_core) by extension 'ignore'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_core) by extension 'ignore_ament_install'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_core) by extensions ['colcon_pkg']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_core) by extension 'colcon_pkg'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_core) by extensions ['colcon_meta']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_core) by extension 'colcon_meta'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_core) by extensions ['ros']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_core) by extension 'ros'
+[0.571s] DEBUG:colcon.colcon_core.package_identification:Package 'src/stretch_ros2/stretch_core' with type 'ros.ament_python' and name 'stretch_core'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_deep_perception) by extensions ['ignore', 'ignore_ament_install']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_deep_perception) by extension 'ignore'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_deep_perception) by extension 'ignore_ament_install'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_deep_perception) by extensions ['colcon_pkg']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_deep_perception) by extension 'colcon_pkg'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_deep_perception) by extensions ['colcon_meta']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_deep_perception) by extension 'colcon_meta'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_deep_perception) by extensions ['ros']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_deep_perception) by extension 'ros'
+[0.574s] DEBUG:colcon.colcon_core.package_identification:Package 'src/stretch_ros2/stretch_deep_perception' with type 'ros.ament_python' and name 'stretch_deep_perception'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_demos) by extensions ['ignore', 'ignore_ament_install']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_demos) by extension 'ignore'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_demos) by extension 'ignore_ament_install'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_demos) by extensions ['colcon_pkg']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_demos) by extension 'colcon_pkg'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_demos) by extensions ['colcon_meta']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_demos) by extension 'colcon_meta'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_demos) by extensions ['ros']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_demos) by extension 'ros'
+[0.575s] DEBUG:colcon.colcon_core.package_identification:Package 'src/stretch_ros2/stretch_demos' with type 'ros.ament_python' and name 'stretch_demos'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_description) by extensions ['ignore', 'ignore_ament_install']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_description) by extension 'ignore'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_description) by extension 'ignore_ament_install'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_description) by extensions ['colcon_pkg']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_description) by extension 'colcon_pkg'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_description) by extensions ['colcon_meta']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_description) by extension 'colcon_meta'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_description) by extensions ['ros']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_description) by extension 'ros'
+[0.577s] DEBUG:colcon.colcon_core.package_identification:Package 'src/stretch_ros2/stretch_description' with type 'ros.ament_cmake' and name 'stretch_description'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_funmap) by extensions ['ignore', 'ignore_ament_install']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_funmap) by extension 'ignore'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_funmap) by extension 'ignore_ament_install'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_funmap) by extensions ['colcon_pkg']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_funmap) by extension 'colcon_pkg'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_funmap) by extensions ['colcon_meta']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_funmap) by extension 'colcon_meta'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_funmap) by extensions ['ros']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_funmap) by extension 'ros'
+[0.579s] DEBUG:colcon.colcon_core.package_identification:Package 'src/stretch_ros2/stretch_funmap' with type 'ros.ament_python' and name 'stretch_funmap'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_nav2) by extensions ['ignore', 'ignore_ament_install']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_nav2) by extension 'ignore'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_nav2) by extension 'ignore_ament_install'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_nav2) by extensions ['colcon_pkg']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_nav2) by extension 'colcon_pkg'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_nav2) by extensions ['colcon_meta']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_nav2) by extension 'colcon_meta'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_nav2) by extensions ['ros']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_nav2) by extension 'ros'
+[0.581s] DEBUG:colcon.colcon_core.package_identification:Package 'src/stretch_ros2/stretch_nav2' with type 'ros.ament_cmake' and name 'stretch_nav2'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_octomap) by extensions ['ignore', 'ignore_ament_install']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_octomap) by extension 'ignore'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_octomap) ignored
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_rtabmap) by extensions ['ignore', 'ignore_ament_install']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_rtabmap) by extension 'ignore'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_rtabmap) by extension 'ignore_ament_install'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_rtabmap) by extensions ['colcon_pkg']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_rtabmap) by extension 'colcon_pkg'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_rtabmap) by extensions ['colcon_meta']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_rtabmap) by extension 'colcon_meta'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_rtabmap) by extensions ['ros']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/stretch_ros2/stretch_rtabmap) by extension 'ros'
+[0.583s] DEBUG:colcon.colcon_core.package_identification:Package 'src/stretch_ros2/stretch_rtabmap' with type 'ros.ament_cmake' and name 'stretch_rtabmap'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(test_scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(test_scripts) by extension 'ignore'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(test_scripts) by extension 'ignore_ament_install'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(test_scripts) by extensions ['colcon_pkg']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(test_scripts) by extension 'colcon_pkg'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(test_scripts) by extensions ['colcon_meta']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(test_scripts) by extension 'colcon_meta'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(test_scripts) by extensions ['ros']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(test_scripts) by extension 'ros'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(test_scripts) by extensions ['cmake', 'python']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(test_scripts) by extension 'cmake'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(test_scripts) by extension 'python'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(test_scripts) by extensions ['python_setup_py']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(test_scripts) by extension 'python_setup_py'
+[0.584s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.584s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.584s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.584s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.584s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.614s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.615s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.619s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 33 installed packages in /home/hello-robot/ament_ws/install
+[0.621s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 388 installed packages in /opt/ros/humble
+[0.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.687s] Level 5:colcon.colcon_core.verb:set package 'hello_helpers' build argument 'cmake_args' from command line to 'None'
+[0.687s] Level 5:colcon.colcon_core.verb:set package 'hello_helpers' build argument 'cmake_target' from command line to 'None'
+[0.687s] Level 5:colcon.colcon_core.verb:set package 'hello_helpers' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.687s] Level 5:colcon.colcon_core.verb:set package 'hello_helpers' build argument 'cmake_clean_cache' from command line to 'False'
+[0.687s] Level 5:colcon.colcon_core.verb:set package 'hello_helpers' build argument 'cmake_clean_first' from command line to 'False'
+[0.687s] Level 5:colcon.colcon_core.verb:set package 'hello_helpers' build argument 'cmake_force_configure' from command line to 'False'
+[0.687s] Level 5:colcon.colcon_core.verb:set package 'hello_helpers' build argument 'ament_cmake_args' from command line to 'None'
+[0.687s] Level 5:colcon.colcon_core.verb:set package 'hello_helpers' build argument 'catkin_cmake_args' from command line to 'None'
+[0.687s] Level 5:colcon.colcon_core.verb:set package 'hello_helpers' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.687s] DEBUG:colcon.colcon_core.verb:Building package 'hello_helpers' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hello-robot/hello_robot_awong/build/hello_helpers', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hello-robot/hello_robot_awong/install/hello_helpers', 'merge_install': False, 'path': '/home/hello-robot/hello_robot_awong/src/stretch_ros2/hello_helpers', 'symlink_install': False, 'test_result_base': None}
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'stretch_deep_perception' build argument 'cmake_args' from command line to 'None'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'stretch_deep_perception' build argument 'cmake_target' from command line to 'None'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'stretch_deep_perception' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'stretch_deep_perception' build argument 'cmake_clean_cache' from command line to 'False'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'stretch_deep_perception' build argument 'cmake_clean_first' from command line to 'False'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'stretch_deep_perception' build argument 'cmake_force_configure' from command line to 'False'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'stretch_deep_perception' build argument 'ament_cmake_args' from command line to 'None'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'stretch_deep_perception' build argument 'catkin_cmake_args' from command line to 'None'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'stretch_deep_perception' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.688s] DEBUG:colcon.colcon_core.verb:Building package 'stretch_deep_perception' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hello-robot/hello_robot_awong/build/stretch_deep_perception', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hello-robot/hello_robot_awong/install/stretch_deep_perception', 'merge_install': False, 'path': '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_deep_perception', 'symlink_install': False, 'test_result_base': None}
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'stretch_demos' build argument 'cmake_args' from command line to 'None'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'stretch_demos' build argument 'cmake_target' from command line to 'None'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'stretch_demos' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'stretch_demos' build argument 'cmake_clean_cache' from command line to 'False'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'stretch_demos' build argument 'cmake_clean_first' from command line to 'False'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'stretch_demos' build argument 'cmake_force_configure' from command line to 'False'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'stretch_demos' build argument 'ament_cmake_args' from command line to 'None'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'stretch_demos' build argument 'catkin_cmake_args' from command line to 'None'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'stretch_demos' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.689s] DEBUG:colcon.colcon_core.verb:Building package 'stretch_demos' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hello-robot/hello_robot_awong/build/stretch_demos', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hello-robot/hello_robot_awong/install/stretch_demos', 'merge_install': False, 'path': '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_demos', 'symlink_install': False, 'test_result_base': None}
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'stretch_description' build argument 'cmake_args' from command line to 'None'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'stretch_description' build argument 'cmake_target' from command line to 'None'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'stretch_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'stretch_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'stretch_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'stretch_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'stretch_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'stretch_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'stretch_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.689s] DEBUG:colcon.colcon_core.verb:Building package 'stretch_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hello-robot/hello_robot_awong/build/stretch_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hello-robot/hello_robot_awong/install/stretch_description', 'merge_install': False, 'path': '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_description', 'symlink_install': False, 'test_result_base': None}
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'stretch_funmap' build argument 'cmake_args' from command line to 'None'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'stretch_funmap' build argument 'cmake_target' from command line to 'None'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'stretch_funmap' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'stretch_funmap' build argument 'cmake_clean_cache' from command line to 'False'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'stretch_funmap' build argument 'cmake_clean_first' from command line to 'False'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'stretch_funmap' build argument 'cmake_force_configure' from command line to 'False'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'stretch_funmap' build argument 'ament_cmake_args' from command line to 'None'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'stretch_funmap' build argument 'catkin_cmake_args' from command line to 'None'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'stretch_funmap' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.690s] DEBUG:colcon.colcon_core.verb:Building package 'stretch_funmap' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hello-robot/hello_robot_awong/build/stretch_funmap', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hello-robot/hello_robot_awong/install/stretch_funmap', 'merge_install': False, 'path': '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_funmap', 'symlink_install': False, 'test_result_base': None}
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'stretch_nav2' build argument 'cmake_args' from command line to 'None'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'stretch_nav2' build argument 'cmake_target' from command line to 'None'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'stretch_nav2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'stretch_nav2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'stretch_nav2' build argument 'cmake_clean_first' from command line to 'False'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'stretch_nav2' build argument 'cmake_force_configure' from command line to 'False'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'stretch_nav2' build argument 'ament_cmake_args' from command line to 'None'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'stretch_nav2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'stretch_nav2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.691s] DEBUG:colcon.colcon_core.verb:Building package 'stretch_nav2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hello-robot/hello_robot_awong/build/stretch_nav2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hello-robot/hello_robot_awong/install/stretch_nav2', 'merge_install': False, 'path': '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_nav2', 'symlink_install': False, 'test_result_base': None}
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'stretch_rtabmap' build argument 'cmake_args' from command line to 'None'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'stretch_rtabmap' build argument 'cmake_target' from command line to 'None'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'stretch_rtabmap' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'stretch_rtabmap' build argument 'cmake_clean_cache' from command line to 'False'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'stretch_rtabmap' build argument 'cmake_clean_first' from command line to 'False'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'stretch_rtabmap' build argument 'cmake_force_configure' from command line to 'False'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'stretch_rtabmap' build argument 'ament_cmake_args' from command line to 'None'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'stretch_rtabmap' build argument 'catkin_cmake_args' from command line to 'None'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'stretch_rtabmap' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.691s] DEBUG:colcon.colcon_core.verb:Building package 'stretch_rtabmap' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hello-robot/hello_robot_awong/build/stretch_rtabmap', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap', 'merge_install': False, 'path': '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_rtabmap', 'symlink_install': False, 'test_result_base': None}
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'stretch_core' build argument 'cmake_args' from command line to 'None'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'stretch_core' build argument 'cmake_target' from command line to 'None'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'stretch_core' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'stretch_core' build argument 'cmake_clean_cache' from command line to 'False'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'stretch_core' build argument 'cmake_clean_first' from command line to 'False'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'stretch_core' build argument 'cmake_force_configure' from command line to 'False'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'stretch_core' build argument 'ament_cmake_args' from command line to 'None'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'stretch_core' build argument 'catkin_cmake_args' from command line to 'None'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'stretch_core' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.692s] DEBUG:colcon.colcon_core.verb:Building package 'stretch_core' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hello-robot/hello_robot_awong/build/stretch_core', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hello-robot/hello_robot_awong/install/stretch_core', 'merge_install': False, 'path': '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_core', 'symlink_install': False, 'test_result_base': None}
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'stretch_calibration' build argument 'cmake_args' from command line to 'None'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'stretch_calibration' build argument 'cmake_target' from command line to 'None'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'stretch_calibration' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'stretch_calibration' build argument 'cmake_clean_cache' from command line to 'False'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'stretch_calibration' build argument 'cmake_clean_first' from command line to 'False'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'stretch_calibration' build argument 'cmake_force_configure' from command line to 'False'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'stretch_calibration' build argument 'ament_cmake_args' from command line to 'None'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'stretch_calibration' build argument 'catkin_cmake_args' from command line to 'None'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'stretch_calibration' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.693s] DEBUG:colcon.colcon_core.verb:Building package 'stretch_calibration' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hello-robot/hello_robot_awong/build/stretch_calibration', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hello-robot/hello_robot_awong/install/stretch_calibration', 'merge_install': False, 'path': '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_calibration', 'symlink_install': False, 'test_result_base': None}
+[0.693s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.694s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.694s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/hello_helpers' with build type 'ament_python'
+[0.695s] Level 1:colcon.colcon_core.shell:create_environment_hook('hello_helpers', 'ament_prefix_path')
+[0.698s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/hello_helpers/share/hello_helpers/hook/ament_prefix_path.ps1'
+[0.699s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hello-robot/hello_robot_awong/install/hello_helpers/share/hello_helpers/hook/ament_prefix_path.dsv'
+[0.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/hello_helpers/share/hello_helpers/hook/ament_prefix_path.sh'
+[0.701s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.701s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.707s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_description' with build type 'ament_cmake'
+[0.708s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_description'
+[0.708s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.708s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.715s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_deep_perception' with build type 'ament_python'
+[0.715s] Level 1:colcon.colcon_core.shell:create_environment_hook('stretch_deep_perception', 'ament_prefix_path')
+[0.715s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/hook/ament_prefix_path.ps1'
+[0.716s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/hook/ament_prefix_path.dsv'
+[0.717s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/hook/ament_prefix_path.sh'
+[0.717s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.717s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.725s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_demos' with build type 'ament_python'
+[0.725s] Level 1:colcon.colcon_core.shell:create_environment_hook('stretch_demos', 'ament_prefix_path')
+[0.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/hook/ament_prefix_path.ps1'
+[0.726s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/hook/ament_prefix_path.dsv'
+[0.726s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/hook/ament_prefix_path.sh'
+[0.727s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.727s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.734s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_funmap' with build type 'ament_python'
+[0.734s] Level 1:colcon.colcon_core.shell:create_environment_hook('stretch_funmap', 'ament_prefix_path')
+[0.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_funmap/share/stretch_funmap/hook/ament_prefix_path.ps1'
+[0.735s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hello-robot/hello_robot_awong/install/stretch_funmap/share/stretch_funmap/hook/ament_prefix_path.dsv'
+[0.736s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_funmap/share/stretch_funmap/hook/ament_prefix_path.sh'
+[0.736s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.736s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.743s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_nav2' with build type 'ament_cmake'
+[0.743s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_nav2'
+[0.743s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.743s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.750s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_rtabmap' with build type 'ament_cmake'
+[0.751s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_rtabmap'
+[0.751s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.751s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.236s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/hello_helpers'
+[1.237s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.237s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.247s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hello-robot/hello_robot_awong/build/stretch_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hello-robot/ament_ws/install/tf2_web_republisher_py:/home/hello-robot/ament_ws/install/stretch_ros_tutorials:/home/hello-robot/ament_ws/install/stretch_funmap:/home/hello-robot/ament_ws/install/stretch_calibration:/home/hello-robot/ament_ws/install/stretch_demos:/home/hello-robot/ament_ws/install/stretch_deep_perception:/home/hello-robot/ament_ws/install/stretch_core:/home/hello-robot/ament_ws/install/respeaker_ros2:/home/hello-robot/ament_ws/install/hello_helpers:/opt/ros/humble /usr/bin/cmake --build /home/hello-robot/hello_robot_awong/build/stretch_description -- -j8 -l8
+[1.725s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_deep_perception'
+[1.726s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.726s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.202s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_demos'
+[2.203s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.203s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.664s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_funmap'
+[2.664s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.664s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.675s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hello-robot/hello_robot_awong/build/stretch_nav2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hello-robot/ament_ws/install/tf2_web_republisher_py:/home/hello-robot/ament_ws/install/stretch_ros_tutorials:/home/hello-robot/ament_ws/install/stretch_funmap:/home/hello-robot/ament_ws/install/stretch_calibration:/home/hello-robot/ament_ws/install/stretch_demos:/home/hello-robot/ament_ws/install/stretch_deep_perception:/home/hello-robot/ament_ws/install/stretch_core:/home/hello-robot/ament_ws/install/respeaker_ros2:/home/hello-robot/ament_ws/install/hello_helpers:/opt/ros/humble /usr/bin/cmake --build /home/hello-robot/hello_robot_awong/build/stretch_nav2 -- -j8 -l8
+[2.680s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hello-robot/hello_robot_awong/build/stretch_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hello-robot/ament_ws/install/tf2_web_republisher_py:/home/hello-robot/ament_ws/install/stretch_ros_tutorials:/home/hello-robot/ament_ws/install/stretch_funmap:/home/hello-robot/ament_ws/install/stretch_calibration:/home/hello-robot/ament_ws/install/stretch_demos:/home/hello-robot/ament_ws/install/stretch_deep_perception:/home/hello-robot/ament_ws/install/stretch_core:/home/hello-robot/ament_ws/install/respeaker_ros2:/home/hello-robot/ament_ws/install/hello_helpers:/opt/ros/humble /usr/bin/cmake --build /home/hello-robot/hello_robot_awong/build/stretch_description -- -j8 -l8
+[2.695s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hello-robot/hello_robot_awong/build/stretch_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hello-robot/ament_ws/install/tf2_web_republisher_py:/home/hello-robot/ament_ws/install/stretch_ros_tutorials:/home/hello-robot/ament_ws/install/stretch_funmap:/home/hello-robot/ament_ws/install/stretch_calibration:/home/hello-robot/ament_ws/install/stretch_demos:/home/hello-robot/ament_ws/install/stretch_deep_perception:/home/hello-robot/ament_ws/install/stretch_core:/home/hello-robot/ament_ws/install/respeaker_ros2:/home/hello-robot/ament_ws/install/hello_helpers:/opt/ros/humble /usr/bin/cmake --install /home/hello-robot/hello_robot_awong/build/stretch_description
+[2.701s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hello-robot/hello_robot_awong/build/stretch_rtabmap': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hello-robot/ament_ws/install/tf2_web_republisher_py:/home/hello-robot/ament_ws/install/stretch_ros_tutorials:/home/hello-robot/ament_ws/install/stretch_funmap:/home/hello-robot/ament_ws/install/stretch_calibration:/home/hello-robot/ament_ws/install/stretch_demos:/home/hello-robot/ament_ws/install/stretch_deep_perception:/home/hello-robot/ament_ws/install/stretch_core:/home/hello-robot/ament_ws/install/respeaker_ros2:/home/hello-robot/ament_ws/install/hello_helpers:/opt/ros/humble /usr/bin/cmake --build /home/hello-robot/hello_robot_awong/build/stretch_rtabmap -- -j8 -l8
+[2.726s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stretch_description)
+[2.735s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_description' for CMake module files
+[2.743s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hello-robot/hello_robot_awong/build/stretch_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hello-robot/ament_ws/install/tf2_web_republisher_py:/home/hello-robot/ament_ws/install/stretch_ros_tutorials:/home/hello-robot/ament_ws/install/stretch_funmap:/home/hello-robot/ament_ws/install/stretch_calibration:/home/hello-robot/ament_ws/install/stretch_demos:/home/hello-robot/ament_ws/install/stretch_deep_perception:/home/hello-robot/ament_ws/install/stretch_core:/home/hello-robot/ament_ws/install/respeaker_ros2:/home/hello-robot/ament_ws/install/hello_helpers:/opt/ros/humble /usr/bin/cmake --install /home/hello-robot/hello_robot_awong/build/stretch_description
+[2.744s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_description' for CMake config files
+[2.745s] Level 1:colcon.colcon_core.shell:create_environment_hook('stretch_description', 'cmake_prefix_path')
+[2.745s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/hook/cmake_prefix_path.ps1'
+[2.746s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/hook/cmake_prefix_path.dsv'
+[2.747s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/hook/cmake_prefix_path.sh'
+[2.748s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_description/bin'
+[2.748s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_description/lib/pkgconfig/stretch_description.pc'
+[2.749s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_description/lib/python3.10/site-packages'
+[2.750s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_description/bin'
+[2.750s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/package.ps1'
+[2.752s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/package.dsv'
+[2.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/package.sh'
+[2.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/package.bash'
+[2.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/package.zsh'
+[2.759s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hello-robot/hello_robot_awong/install/stretch_description/share/colcon-core/packages/stretch_description)
+[2.760s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stretch_description)
+[2.760s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_description' for CMake module files
+[2.761s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_description' for CMake config files
+[2.762s] Level 1:colcon.colcon_core.shell:create_environment_hook('stretch_description', 'cmake_prefix_path')
+[2.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/hook/cmake_prefix_path.ps1'
+[2.763s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/hook/cmake_prefix_path.dsv'
+[2.764s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/hook/cmake_prefix_path.sh'
+[2.765s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_description/bin'
+[2.765s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_description/lib/pkgconfig/stretch_description.pc'
+[2.766s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_description/lib/python3.10/site-packages'
+[2.766s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_description/bin'
+[2.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/package.ps1'
+[2.769s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/package.dsv'
+[2.770s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/package.sh'
+[2.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/package.bash'
+[2.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_description/share/stretch_description/package.zsh'
+[2.772s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hello-robot/hello_robot_awong/install/stretch_description/share/colcon-core/packages/stretch_description)
+[2.778s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hello-robot/hello_robot_awong/build/stretch_rtabmap' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hello-robot/ament_ws/install/tf2_web_republisher_py:/home/hello-robot/ament_ws/install/stretch_ros_tutorials:/home/hello-robot/ament_ws/install/stretch_funmap:/home/hello-robot/ament_ws/install/stretch_calibration:/home/hello-robot/ament_ws/install/stretch_demos:/home/hello-robot/ament_ws/install/stretch_deep_perception:/home/hello-robot/ament_ws/install/stretch_core:/home/hello-robot/ament_ws/install/respeaker_ros2:/home/hello-robot/ament_ws/install/hello_helpers:/opt/ros/humble /usr/bin/cmake --build /home/hello-robot/hello_robot_awong/build/stretch_rtabmap -- -j8 -l8
+[2.781s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hello-robot/hello_robot_awong/build/stretch_rtabmap': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hello-robot/ament_ws/install/tf2_web_republisher_py:/home/hello-robot/ament_ws/install/stretch_ros_tutorials:/home/hello-robot/ament_ws/install/stretch_funmap:/home/hello-robot/ament_ws/install/stretch_calibration:/home/hello-robot/ament_ws/install/stretch_demos:/home/hello-robot/ament_ws/install/stretch_deep_perception:/home/hello-robot/ament_ws/install/stretch_core:/home/hello-robot/ament_ws/install/respeaker_ros2:/home/hello-robot/ament_ws/install/hello_helpers:/opt/ros/humble /usr/bin/cmake --install /home/hello-robot/hello_robot_awong/build/stretch_rtabmap
+[2.802s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stretch_rtabmap)
+[2.803s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap' for CMake module files
+[2.804s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hello-robot/hello_robot_awong/build/stretch_rtabmap' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hello-robot/ament_ws/install/tf2_web_republisher_py:/home/hello-robot/ament_ws/install/stretch_ros_tutorials:/home/hello-robot/ament_ws/install/stretch_funmap:/home/hello-robot/ament_ws/install/stretch_calibration:/home/hello-robot/ament_ws/install/stretch_demos:/home/hello-robot/ament_ws/install/stretch_deep_perception:/home/hello-robot/ament_ws/install/stretch_core:/home/hello-robot/ament_ws/install/respeaker_ros2:/home/hello-robot/ament_ws/install/hello_helpers:/opt/ros/humble /usr/bin/cmake --install /home/hello-robot/hello_robot_awong/build/stretch_rtabmap
+[2.805s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap' for CMake config files
+[2.805s] Level 1:colcon.colcon_core.shell:create_environment_hook('stretch_rtabmap', 'cmake_prefix_path')
+[2.806s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/share/stretch_rtabmap/hook/cmake_prefix_path.ps1'
+[2.807s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/share/stretch_rtabmap/hook/cmake_prefix_path.dsv'
+[2.807s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/share/stretch_rtabmap/hook/cmake_prefix_path.sh'
+[2.808s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/bin'
+[2.809s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/lib/pkgconfig/stretch_rtabmap.pc'
+[2.809s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/lib/python3.10/site-packages'
+[2.809s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/bin'
+[2.810s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/share/stretch_rtabmap/package.ps1'
+[2.811s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/share/stretch_rtabmap/package.dsv'
+[2.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/share/stretch_rtabmap/package.sh'
+[2.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/share/stretch_rtabmap/package.bash'
+[2.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/share/stretch_rtabmap/package.zsh'
+[2.814s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/share/colcon-core/packages/stretch_rtabmap)
+[2.815s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stretch_rtabmap)
+[2.816s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap' for CMake module files
+[2.817s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap' for CMake config files
+[2.817s] Level 1:colcon.colcon_core.shell:create_environment_hook('stretch_rtabmap', 'cmake_prefix_path')
+[2.818s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/share/stretch_rtabmap/hook/cmake_prefix_path.ps1'
+[2.818s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/share/stretch_rtabmap/hook/cmake_prefix_path.dsv'
+[2.819s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/share/stretch_rtabmap/hook/cmake_prefix_path.sh'
+[2.820s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/bin'
+[2.820s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/lib/pkgconfig/stretch_rtabmap.pc'
+[2.821s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/lib/python3.10/site-packages'
+[2.821s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/bin'
+[2.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/share/stretch_rtabmap/package.ps1'
+[2.823s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/share/stretch_rtabmap/package.dsv'
+[2.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/share/stretch_rtabmap/package.sh'
+[2.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/share/stretch_rtabmap/package.bash'
+[2.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/share/stretch_rtabmap/package.zsh'
+[2.826s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hello-robot/hello_robot_awong/install/stretch_rtabmap/share/colcon-core/packages/stretch_rtabmap)
+[3.374s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hello-robot/hello_robot_awong/build/stretch_nav2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hello-robot/ament_ws/install/tf2_web_republisher_py:/home/hello-robot/ament_ws/install/stretch_ros_tutorials:/home/hello-robot/ament_ws/install/stretch_funmap:/home/hello-robot/ament_ws/install/stretch_calibration:/home/hello-robot/ament_ws/install/stretch_demos:/home/hello-robot/ament_ws/install/stretch_deep_perception:/home/hello-robot/ament_ws/install/stretch_core:/home/hello-robot/ament_ws/install/respeaker_ros2:/home/hello-robot/ament_ws/install/hello_helpers:/opt/ros/humble /usr/bin/cmake --build /home/hello-robot/hello_robot_awong/build/stretch_nav2 -- -j8 -l8
+[3.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hello-robot/hello_robot_awong/build/stretch_nav2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hello-robot/ament_ws/install/tf2_web_republisher_py:/home/hello-robot/ament_ws/install/stretch_ros_tutorials:/home/hello-robot/ament_ws/install/stretch_funmap:/home/hello-robot/ament_ws/install/stretch_calibration:/home/hello-robot/ament_ws/install/stretch_demos:/home/hello-robot/ament_ws/install/stretch_deep_perception:/home/hello-robot/ament_ws/install/stretch_core:/home/hello-robot/ament_ws/install/respeaker_ros2:/home/hello-robot/ament_ws/install/hello_helpers:/opt/ros/humble /usr/bin/cmake --install /home/hello-robot/hello_robot_awong/build/stretch_nav2
+[3.470s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stretch_nav2)
+[3.471s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_nav2' for CMake module files
+[3.472s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hello-robot/hello_robot_awong/build/stretch_nav2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hello-robot/ament_ws/install/tf2_web_republisher_py:/home/hello-robot/ament_ws/install/stretch_ros_tutorials:/home/hello-robot/ament_ws/install/stretch_funmap:/home/hello-robot/ament_ws/install/stretch_calibration:/home/hello-robot/ament_ws/install/stretch_demos:/home/hello-robot/ament_ws/install/stretch_deep_perception:/home/hello-robot/ament_ws/install/stretch_core:/home/hello-robot/ament_ws/install/respeaker_ros2:/home/hello-robot/ament_ws/install/hello_helpers:/opt/ros/humble /usr/bin/cmake --install /home/hello-robot/hello_robot_awong/build/stretch_nav2
+[3.473s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_nav2' for CMake config files
+[3.473s] Level 1:colcon.colcon_core.shell:create_environment_hook('stretch_nav2', 'cmake_prefix_path')
+[3.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_nav2/share/stretch_nav2/hook/cmake_prefix_path.ps1'
+[3.474s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hello-robot/hello_robot_awong/install/stretch_nav2/share/stretch_nav2/hook/cmake_prefix_path.dsv'
+[3.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_nav2/share/stretch_nav2/hook/cmake_prefix_path.sh'
+[3.475s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_nav2/lib'
+[3.475s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_nav2/bin'
+[3.475s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_nav2/lib/pkgconfig/stretch_nav2.pc'
+[3.476s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_nav2/lib/python3.10/site-packages'
+[3.476s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_nav2/bin'
+[3.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_nav2/share/stretch_nav2/package.ps1'
+[3.477s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hello-robot/hello_robot_awong/install/stretch_nav2/share/stretch_nav2/package.dsv'
+[3.478s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_nav2/share/stretch_nav2/package.sh'
+[3.478s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_nav2/share/stretch_nav2/package.bash'
+[3.479s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_nav2/share/stretch_nav2/package.zsh'
+[3.479s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hello-robot/hello_robot_awong/install/stretch_nav2/share/colcon-core/packages/stretch_nav2)
+[3.480s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stretch_nav2)
+[3.481s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_nav2' for CMake module files
+[3.481s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_nav2' for CMake config files
+[3.482s] Level 1:colcon.colcon_core.shell:create_environment_hook('stretch_nav2', 'cmake_prefix_path')
+[3.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_nav2/share/stretch_nav2/hook/cmake_prefix_path.ps1'
+[3.483s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hello-robot/hello_robot_awong/install/stretch_nav2/share/stretch_nav2/hook/cmake_prefix_path.dsv'
+[3.483s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_nav2/share/stretch_nav2/hook/cmake_prefix_path.sh'
+[3.484s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_nav2/lib'
+[3.484s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_nav2/bin'
+[3.484s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_nav2/lib/pkgconfig/stretch_nav2.pc'
+[3.484s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_nav2/lib/python3.10/site-packages'
+[3.485s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_nav2/bin'
+[3.485s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_nav2/share/stretch_nav2/package.ps1'
+[3.486s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hello-robot/hello_robot_awong/install/stretch_nav2/share/stretch_nav2/package.dsv'
+[3.487s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_nav2/share/stretch_nav2/package.sh'
+[3.487s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_nav2/share/stretch_nav2/package.bash'
+[3.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_nav2/share/stretch_nav2/package.zsh'
+[3.488s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hello-robot/hello_robot_awong/install/stretch_nav2/share/colcon-core/packages/stretch_nav2)
+[3.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_deep_perception': PYTHONPATH=/home/hello-robot/hello_robot_awong/build/stretch_deep_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/stretch_deep_perception build --build-base /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build install --record /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/install.log --single-version-externally-managed install_data
+[3.532s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_demos': PYTHONPATH=/home/hello-robot/hello_robot_awong/build/stretch_demos/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/stretch_demos build --build-base /home/hello-robot/hello_robot_awong/build/stretch_demos/build install --record /home/hello-robot/hello_robot_awong/build/stretch_demos/install.log --single-version-externally-managed install_data
+[3.844s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/hello_helpers': PYTHONPATH=/home/hello-robot/hello_robot_awong/build/hello_helpers/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hello-robot/hello_robot_awong/install/hello_helpers/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/hello_helpers build --build-base /home/hello-robot/hello_robot_awong/build/hello_helpers/build install --record /home/hello-robot/hello_robot_awong/build/hello_helpers/install.log --single-version-externally-managed install_data
+[3.852s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_funmap': PYTHONPATH=/home/hello-robot/hello_robot_awong/build/stretch_funmap/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hello-robot/hello_robot_awong/install/stretch_funmap/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/stretch_funmap build --build-base /home/hello-robot/hello_robot_awong/build/stretch_funmap/build install --record /home/hello-robot/hello_robot_awong/build/stretch_funmap/install.log --single-version-externally-managed install_data
+[4.121s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_deep_perception' for CMake module files
+[4.122s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_deep_perception' returned '0': PYTHONPATH=/home/hello-robot/hello_robot_awong/build/stretch_deep_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/stretch_deep_perception build --build-base /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build install --record /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/install.log --single-version-externally-managed install_data
+[4.123s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_deep_perception' for CMake config files
+[4.124s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib'
+[4.124s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/bin'
+[4.124s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/pkgconfig/stretch_deep_perception.pc'
+[4.124s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages'
+[4.124s] Level 1:colcon.colcon_core.shell:create_environment_hook('stretch_deep_perception', 'pythonpath')
+[4.124s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/hook/pythonpath.ps1'
+[4.125s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/hook/pythonpath.dsv'
+[4.125s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/hook/pythonpath.sh'
+[4.126s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/bin'
+[4.126s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stretch_deep_perception)
+[4.127s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/package.ps1'
+[4.127s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/package.dsv'
+[4.128s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/package.sh'
+[4.128s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/package.bash'
+[4.129s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/package.zsh'
+[4.129s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/colcon-core/packages/stretch_deep_perception)
+[4.130s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_demos' for CMake module files
+[4.131s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_demos' returned '0': PYTHONPATH=/home/hello-robot/hello_robot_awong/build/stretch_demos/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/stretch_demos build --build-base /home/hello-robot/hello_robot_awong/build/stretch_demos/build install --record /home/hello-robot/hello_robot_awong/build/stretch_demos/install.log --single-version-externally-managed install_data
+[4.131s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_demos' for CMake config files
+[4.132s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_demos/lib'
+[4.132s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_demos/bin'
+[4.132s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_demos/lib/pkgconfig/stretch_demos.pc'
+[4.132s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages'
+[4.132s] Level 1:colcon.colcon_core.shell:create_environment_hook('stretch_demos', 'pythonpath')
+[4.133s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/hook/pythonpath.ps1'
+[4.133s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/hook/pythonpath.dsv'
+[4.134s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/hook/pythonpath.sh'
+[4.134s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_demos/bin'
+[4.134s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stretch_demos)
+[4.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/package.ps1'
+[4.135s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/package.dsv'
+[4.136s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/package.sh'
+[4.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/package.bash'
+[4.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/package.zsh'
+[4.137s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hello-robot/hello_robot_awong/install/stretch_demos/share/colcon-core/packages/stretch_demos)
+[4.415s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_funmap' for CMake module files
+[4.415s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_funmap' returned '0': PYTHONPATH=/home/hello-robot/hello_robot_awong/build/stretch_funmap/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hello-robot/hello_robot_awong/install/stretch_funmap/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/stretch_funmap build --build-base /home/hello-robot/hello_robot_awong/build/stretch_funmap/build install --record /home/hello-robot/hello_robot_awong/build/stretch_funmap/install.log --single-version-externally-managed install_data
+[4.416s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_funmap' for CMake config files
+[4.417s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_funmap/lib'
+[4.417s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_funmap/bin'
+[4.417s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_funmap/lib/pkgconfig/stretch_funmap.pc'
+[4.417s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_funmap/lib/python3.10/site-packages'
+[4.417s] Level 1:colcon.colcon_core.shell:create_environment_hook('stretch_funmap', 'pythonpath')
+[4.417s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_funmap/share/stretch_funmap/hook/pythonpath.ps1'
+[4.418s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hello-robot/hello_robot_awong/install/stretch_funmap/share/stretch_funmap/hook/pythonpath.dsv'
+[4.418s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_funmap/share/stretch_funmap/hook/pythonpath.sh'
+[4.419s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_funmap/bin'
+[4.419s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stretch_funmap)
+[4.420s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_funmap/share/stretch_funmap/package.ps1'
+[4.420s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hello-robot/hello_robot_awong/install/stretch_funmap/share/stretch_funmap/package.dsv'
+[4.421s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_funmap/share/stretch_funmap/package.sh'
+[4.422s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_funmap/share/stretch_funmap/package.bash'
+[4.422s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_funmap/share/stretch_funmap/package.zsh'
+[4.422s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hello-robot/hello_robot_awong/install/stretch_funmap/share/colcon-core/packages/stretch_funmap)
+[4.423s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/hello_helpers' for CMake module files
+[4.425s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/hello_helpers' for CMake config files
+[4.425s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/hello_helpers' returned '0': PYTHONPATH=/home/hello-robot/hello_robot_awong/build/hello_helpers/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hello-robot/hello_robot_awong/install/hello_helpers/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/hello_helpers build --build-base /home/hello-robot/hello_robot_awong/build/hello_helpers/build install --record /home/hello-robot/hello_robot_awong/build/hello_helpers/install.log --single-version-externally-managed install_data
+[4.426s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/hello_helpers/lib'
+[4.426s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/hello_helpers/bin'
+[4.426s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/hello_helpers/lib/pkgconfig/hello_helpers.pc'
+[4.426s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/hello_helpers/lib/python3.10/site-packages'
+[4.426s] Level 1:colcon.colcon_core.shell:create_environment_hook('hello_helpers', 'pythonpath')
+[4.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/hello_helpers/share/hello_helpers/hook/pythonpath.ps1'
+[4.427s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hello-robot/hello_robot_awong/install/hello_helpers/share/hello_helpers/hook/pythonpath.dsv'
+[4.428s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/hello_helpers/share/hello_helpers/hook/pythonpath.sh'
+[4.428s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/hello_helpers/bin'
+[4.428s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hello_helpers)
+[4.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/hello_helpers/share/hello_helpers/package.ps1'
+[4.429s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hello-robot/hello_robot_awong/install/hello_helpers/share/hello_helpers/package.dsv'
+[4.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/hello_helpers/share/hello_helpers/package.sh'
+[4.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/hello_helpers/share/hello_helpers/package.bash'
+[4.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/hello_helpers/share/hello_helpers/package.zsh'
+[4.431s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hello-robot/hello_robot_awong/install/hello_helpers/share/colcon-core/packages/hello_helpers)
+[4.432s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_core' with build type 'ament_python'
+[4.432s] Level 1:colcon.colcon_core.shell:create_environment_hook('stretch_core', 'ament_prefix_path')
+[4.432s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_core/share/stretch_core/hook/ament_prefix_path.ps1'
+[4.433s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hello-robot/hello_robot_awong/install/stretch_core/share/stretch_core/hook/ament_prefix_path.dsv'
+[4.433s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_core/share/stretch_core/hook/ament_prefix_path.sh'
+[4.434s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.434s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.888s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_core'
+[4.888s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.888s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.541s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_core': AMENT_PREFIX_PATH=/home/hello-robot/hello_robot_awong/install/hello_helpers:${AMENT_PREFIX_PATH} PYTHONPATH=/home/hello-robot/hello_robot_awong/build/stretch_core/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hello-robot/hello_robot_awong/install/stretch_core/lib/python3.10/site-packages:/home/hello-robot/hello_robot_awong/install/hello_helpers/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/stretch_core build --build-base /home/hello-robot/hello_robot_awong/build/stretch_core/build install --record /home/hello-robot/hello_robot_awong/build/stretch_core/install.log --single-version-externally-managed install_data
+[6.033s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_core' for CMake module files
+[6.033s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_core' returned '0': AMENT_PREFIX_PATH=/home/hello-robot/hello_robot_awong/install/hello_helpers:${AMENT_PREFIX_PATH} PYTHONPATH=/home/hello-robot/hello_robot_awong/build/stretch_core/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hello-robot/hello_robot_awong/install/stretch_core/lib/python3.10/site-packages:/home/hello-robot/hello_robot_awong/install/hello_helpers/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/stretch_core build --build-base /home/hello-robot/hello_robot_awong/build/stretch_core/build install --record /home/hello-robot/hello_robot_awong/build/stretch_core/install.log --single-version-externally-managed install_data
+[6.034s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_core' for CMake config files
+[6.035s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_core/lib'
+[6.035s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_core/bin'
+[6.035s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_core/lib/pkgconfig/stretch_core.pc'
+[6.036s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_core/lib/python3.10/site-packages'
+[6.036s] Level 1:colcon.colcon_core.shell:create_environment_hook('stretch_core', 'pythonpath')
+[6.036s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_core/share/stretch_core/hook/pythonpath.ps1'
+[6.037s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hello-robot/hello_robot_awong/install/stretch_core/share/stretch_core/hook/pythonpath.dsv'
+[6.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_core/share/stretch_core/hook/pythonpath.sh'
+[6.038s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_core/bin'
+[6.038s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stretch_core)
+[6.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_core/share/stretch_core/package.ps1'
+[6.039s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hello-robot/hello_robot_awong/install/stretch_core/share/stretch_core/package.dsv'
+[6.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_core/share/stretch_core/package.sh'
+[6.040s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_core/share/stretch_core/package.bash'
+[6.040s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_core/share/stretch_core/package.zsh'
+[6.041s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hello-robot/hello_robot_awong/install/stretch_core/share/colcon-core/packages/stretch_core)
+[6.041s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_calibration' with build type 'ament_python'
+[6.041s] Level 1:colcon.colcon_core.shell:create_environment_hook('stretch_calibration', 'ament_prefix_path')
+[6.041s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_calibration/share/stretch_calibration/hook/ament_prefix_path.ps1'
+[6.042s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hello-robot/hello_robot_awong/install/stretch_calibration/share/stretch_calibration/hook/ament_prefix_path.dsv'
+[6.043s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_calibration/share/stretch_calibration/hook/ament_prefix_path.sh'
+[6.044s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.044s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.493s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_calibration'
+[6.493s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.493s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.166s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_calibration': AMENT_PREFIX_PATH=/home/hello-robot/hello_robot_awong/install/stretch_core:/home/hello-robot/hello_robot_awong/install/stretch_description:/home/hello-robot/hello_robot_awong/install/hello_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hello-robot/hello_robot_awong/install/stretch_description:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/hello-robot/hello_robot_awong/build/stretch_calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hello-robot/hello_robot_awong/install/stretch_calibration/lib/python3.10/site-packages:/home/hello-robot/hello_robot_awong/install/stretch_core/lib/python3.10/site-packages:/home/hello-robot/hello_robot_awong/install/hello_helpers/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/stretch_calibration build --build-base /home/hello-robot/hello_robot_awong/build/stretch_calibration/build install --record /home/hello-robot/hello_robot_awong/build/stretch_calibration/install.log --single-version-externally-managed install_data
+[7.655s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_calibration' for CMake module files
+[7.656s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_calibration' returned '0': AMENT_PREFIX_PATH=/home/hello-robot/hello_robot_awong/install/stretch_core:/home/hello-robot/hello_robot_awong/install/stretch_description:/home/hello-robot/hello_robot_awong/install/hello_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hello-robot/hello_robot_awong/install/stretch_description:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/hello-robot/hello_robot_awong/build/stretch_calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hello-robot/hello_robot_awong/install/stretch_calibration/lib/python3.10/site-packages:/home/hello-robot/hello_robot_awong/install/stretch_core/lib/python3.10/site-packages:/home/hello-robot/hello_robot_awong/install/hello_helpers/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/stretch_calibration build --build-base /home/hello-robot/hello_robot_awong/build/stretch_calibration/build install --record /home/hello-robot/hello_robot_awong/build/stretch_calibration/install.log --single-version-externally-managed install_data
+[7.657s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_calibration' for CMake config files
+[7.657s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_calibration/lib'
+[7.657s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_calibration/bin'
+[7.657s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_calibration/lib/pkgconfig/stretch_calibration.pc'
+[7.658s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_calibration/lib/python3.10/site-packages'
+[7.658s] Level 1:colcon.colcon_core.shell:create_environment_hook('stretch_calibration', 'pythonpath')
+[7.658s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_calibration/share/stretch_calibration/hook/pythonpath.ps1'
+[7.659s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hello-robot/hello_robot_awong/install/stretch_calibration/share/stretch_calibration/hook/pythonpath.dsv'
+[7.659s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hello-robot/hello_robot_awong/install/stretch_calibration/share/stretch_calibration/hook/pythonpath.sh'
+[7.660s] Level 1:colcon.colcon_core.environment:checking '/home/hello-robot/hello_robot_awong/install/stretch_calibration/bin'
+[7.660s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stretch_calibration)
+[7.660s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_calibration/share/stretch_calibration/package.ps1'
+[7.661s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hello-robot/hello_robot_awong/install/stretch_calibration/share/stretch_calibration/package.dsv'
+[7.661s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_calibration/share/stretch_calibration/package.sh'
+[7.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_calibration/share/stretch_calibration/package.bash'
+[7.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/hello-robot/hello_robot_awong/install/stretch_calibration/share/stretch_calibration/package.zsh'
+[7.663s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hello-robot/hello_robot_awong/install/stretch_calibration/share/colcon-core/packages/stretch_calibration)
+[7.663s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.663s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.663s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.663s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.672s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.672s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.672s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.682s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.682s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hello-robot/hello_robot_awong/install/local_setup.ps1'
+[7.684s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hello-robot/hello_robot_awong/install/_local_setup_util_ps1.py'
+[7.685s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hello-robot/hello_robot_awong/install/setup.ps1'
+[7.688s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hello-robot/hello_robot_awong/install/local_setup.sh'
+[7.689s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hello-robot/hello_robot_awong/install/_local_setup_util_sh.py'
+[7.689s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hello-robot/hello_robot_awong/install/setup.sh'
+[7.693s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hello-robot/hello_robot_awong/install/local_setup.bash'
+[7.694s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hello-robot/hello_robot_awong/install/setup.bash'
+[7.697s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hello-robot/hello_robot_awong/install/local_setup.zsh'
+[7.698s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hello-robot/hello_robot_awong/install/setup.zsh'

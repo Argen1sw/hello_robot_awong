@@ -1,0 +1,59 @@
+running egg_info
+creating ../../../build/stretch_demos/stretch_demos.egg-info
+writing ../../../build/stretch_demos/stretch_demos.egg-info/PKG-INFO
+writing dependency_links to ../../../build/stretch_demos/stretch_demos.egg-info/dependency_links.txt
+writing entry points to ../../../build/stretch_demos/stretch_demos.egg-info/entry_points.txt
+writing requirements to ../../../build/stretch_demos/stretch_demos.egg-info/requires.txt
+writing top-level names to ../../../build/stretch_demos/stretch_demos.egg-info/top_level.txt
+writing manifest file '../../../build/stretch_demos/stretch_demos.egg-info/SOURCES.txt'
+reading manifest file '../../../build/stretch_demos/stretch_demos.egg-info/SOURCES.txt'
+adding license file 'LICENSE.md'
+writing manifest file '../../../build/stretch_demos/stretch_demos.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/hello-robot/hello_robot_awong/build/stretch_demos/build
+creating /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib
+creating /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos
+copying stretch_demos/__init__.py -> /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos
+copying stretch_demos/clean_surface.py -> /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos
+copying stretch_demos/handover_object.py -> /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos
+copying stretch_demos/hello_world.py -> /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos
+copying stretch_demos/open_drawer.py -> /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos
+copying stretch_demos/grasp_object.py -> /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos
+running install
+running install_lib
+creating /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos
+copying /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos/__init__.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos
+copying /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos/clean_surface.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos
+copying /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos/handover_object.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos
+copying /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos/hello_world.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos
+copying /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos/open_drawer.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos
+copying /home/hello-robot/hello_robot_awong/build/stretch_demos/build/lib/stretch_demos/grasp_object.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos/clean_surface.py to clean_surface.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos/handover_object.py to handover_object.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos/hello_world.py to hello_world.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos/open_drawer.py to open_drawer.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos/grasp_object.py to grasp_object.cpython-310.pyc
+running install_data
+creating /home/hello-robot/hello_robot_awong/install/stretch_demos/share/ament_index
+creating /home/hello-robot/hello_robot_awong/install/stretch_demos/share/ament_index/resource_index
+creating /home/hello-robot/hello_robot_awong/install/stretch_demos/share/ament_index/resource_index/packages
+copying resource/stretch_demos -> /home/hello-robot/hello_robot_awong/install/stretch_demos/share/ament_index/resource_index/packages
+copying package.xml -> /home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos
+creating /home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/launch
+copying launch/hello_world.launch.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/launch
+copying launch/clean_surface.launch.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/launch
+copying launch/grasp_object.launch.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/launch
+copying launch/handover_object.launch.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/launch
+copying launch/open_drawer.launch.py -> /home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/launch
+creating /home/hello-robot/hello_robot_awong/install/stretch_demos/share/stretch_demos/rviz
+running install_egg_info
+Copying ../../../build/stretch_demos/stretch_demos.egg-info to /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/python3.10/site-packages/stretch_demos-0.0.0-py3.10.egg-info
+running install_scripts
+Installing clean_surface script to /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/stretch_demos
+Installing grasp_object script to /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/stretch_demos
+Installing handover_object script to /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/stretch_demos
+Installing hello_world script to /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/stretch_demos
+Installing open_drawer script to /home/hello-robot/hello_robot_awong/install/stretch_demos/lib/stretch_demos
+writing list of installed files to '/home/hello-robot/hello_robot_awong/build/stretch_demos/install.log'

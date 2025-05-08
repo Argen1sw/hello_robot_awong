@@ -1,0 +1,97 @@
+running egg_info
+creating ../../../build/stretch_deep_perception/stretch_deep_perception.egg-info
+writing ../../../build/stretch_deep_perception/stretch_deep_perception.egg-info/PKG-INFO
+writing dependency_links to ../../../build/stretch_deep_perception/stretch_deep_perception.egg-info/dependency_links.txt
+writing entry points to ../../../build/stretch_deep_perception/stretch_deep_perception.egg-info/entry_points.txt
+writing requirements to ../../../build/stretch_deep_perception/stretch_deep_perception.egg-info/requires.txt
+writing top-level names to ../../../build/stretch_deep_perception/stretch_deep_perception.egg-info/top_level.txt
+writing manifest file '../../../build/stretch_deep_perception/stretch_deep_perception.egg-info/SOURCES.txt'
+reading manifest file '../../../build/stretch_deep_perception/stretch_deep_perception.egg-info/SOURCES.txt'
+adding license file 'LICENSE.md'
+writing manifest file '../../../build/stretch_deep_perception/stretch_deep_perception.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build
+creating /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib
+creating /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+copying stretch_deep_perception/test_body_landmark_detection_with_images.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+copying stretch_deep_perception/deep_learning_model_options.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+copying stretch_deep_perception/test_object_detection_with_images.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+copying stretch_deep_perception/__init__.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+copying stretch_deep_perception/detection_ros_markers.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+copying stretch_deep_perception/detect_body_landmarks.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+copying stretch_deep_perception/head_estimator.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+copying stretch_deep_perception/deep_models_shared.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+copying stretch_deep_perception/object_detect_pytorch.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+copying stretch_deep_perception/detection_node.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+copying stretch_deep_perception/detect_nearest_mouth.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+copying stretch_deep_perception/detect_objects.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+copying stretch_deep_perception/detection_2d_to_3d.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+copying stretch_deep_perception/test_head_estimation_with_images.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+copying stretch_deep_perception/body_landmark_detector.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+copying stretch_deep_perception/object_detector.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+copying stretch_deep_perception/detect_faces.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+copying stretch_deep_perception/numba_image_to_pointcloud.py -> /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception
+running install
+running install_lib
+creating /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/test_body_landmark_detection_with_images.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/deep_learning_model_options.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/test_object_detection_with_images.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/__init__.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/detection_ros_markers.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/detect_body_landmarks.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/head_estimator.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/deep_models_shared.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/object_detect_pytorch.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/detection_node.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/detect_nearest_mouth.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/detect_objects.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/detection_2d_to_3d.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/test_head_estimation_with_images.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/body_landmark_detector.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/object_detector.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/detect_faces.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+copying /home/hello-robot/hello_robot_awong/build/stretch_deep_perception/build/lib/stretch_deep_perception/numba_image_to_pointcloud.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/test_body_landmark_detection_with_images.py to test_body_landmark_detection_with_images.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/deep_learning_model_options.py to deep_learning_model_options.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/test_object_detection_with_images.py to test_object_detection_with_images.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/detection_ros_markers.py to detection_ros_markers.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/detect_body_landmarks.py to detect_body_landmarks.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/head_estimator.py to head_estimator.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/deep_models_shared.py to deep_models_shared.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/object_detect_pytorch.py to object_detect_pytorch.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/detection_node.py to detection_node.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/detect_nearest_mouth.py to detect_nearest_mouth.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/detect_objects.py to detect_objects.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/detection_2d_to_3d.py to detection_2d_to_3d.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/test_head_estimation_with_images.py to test_head_estimation_with_images.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/body_landmark_detector.py to body_landmark_detector.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/object_detector.py to object_detector.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/detect_faces.py to detect_faces.cpython-310.pyc
+byte-compiling /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception/numba_image_to_pointcloud.py to numba_image_to_pointcloud.cpython-310.pyc
+running install_data
+creating /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/ament_index
+creating /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/ament_index/resource_index
+creating /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/ament_index/resource_index/packages
+copying resource/stretch_deep_perception -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/ament_index/resource_index/packages
+copying package.xml -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception
+creating /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/launch
+copying launch/stretch_detect_faces.launch.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/launch
+copying launch/stretch_detect_nearest_mouth.launch.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/launch
+copying launch/stretch_detect_body_landmarks.launch.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/launch
+copying launch/stretch_detect_objects.launch.py -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/launch
+creating /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/rviz
+copying rviz/nearest_mouth_detection.rviz -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/rviz
+copying rviz/face_detection.rviz -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/rviz
+copying rviz/object_detection.rviz -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/rviz
+copying rviz/body_landmark_detection.rviz -> /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/share/stretch_deep_perception/rviz
+running install_egg_info
+Copying ../../../build/stretch_deep_perception/stretch_deep_perception.egg-info to /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/python3.10/site-packages/stretch_deep_perception-0.0.0-py3.10.egg-info
+running install_scripts
+Installing detect_body_landmarks script to /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/stretch_deep_perception
+Installing detect_faces script to /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/stretch_deep_perception
+Installing detect_nearest_mouth script to /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/stretch_deep_perception
+Installing detect_objects script to /home/hello-robot/hello_robot_awong/install/stretch_deep_perception/lib/stretch_deep_perception
+writing list of installed files to '/home/hello-robot/hello_robot_awong/build/stretch_deep_perception/install.log'

@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-51e7c531d68d0fc1570d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "stretch_nav2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_stretch_nav2_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_stretch_nav2_egg-b785a3f6bc0f2a098780.json",
+					"name" : "ament_cmake_python_build_stretch_nav2_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_stretch_nav2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_stretch_nav2-f02a489699aa491ebea9.json",
+					"name" : "ament_cmake_python_copy_stretch_nav2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stretch_nav2_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stretch_nav2_uninstall-ecb901673add502f00ef.json",
+					"name" : "stretch_nav2_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-058e339adbbb50e76699.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/hello-robot/hello_robot_awong/build/stretch_nav2",
+		"source" : "/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_nav2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

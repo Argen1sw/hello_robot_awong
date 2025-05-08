@@ -1,0 +1,22 @@
+[3.117s] Invoking command in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_funmap': PYTHONPATH=/home/hello-robot/hello_robot_awong/build/stretch_funmap/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hello-robot/hello_robot_awong/install/stretch_funmap/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/stretch_funmap build --build-base /home/hello-robot/hello_robot_awong/build/stretch_funmap/build install --record /home/hello-robot/hello_robot_awong/build/stretch_funmap/install.log --single-version-externally-managed install_data
+[3.597s] running egg_info
+[3.599s] writing ../../../build/stretch_funmap/stretch_funmap.egg-info/PKG-INFO
+[3.599s] writing dependency_links to ../../../build/stretch_funmap/stretch_funmap.egg-info/dependency_links.txt
+[3.599s] writing entry points to ../../../build/stretch_funmap/stretch_funmap.egg-info/entry_points.txt
+[3.599s] writing requirements to ../../../build/stretch_funmap/stretch_funmap.egg-info/requires.txt
+[3.599s] writing top-level names to ../../../build/stretch_funmap/stretch_funmap.egg-info/top_level.txt
+[3.602s] reading manifest file '../../../build/stretch_funmap/stretch_funmap.egg-info/SOURCES.txt'
+[3.602s] adding license file 'LICENSE.md'
+[3.604s] writing manifest file '../../../build/stretch_funmap/stretch_funmap.egg-info/SOURCES.txt'
+[3.605s] running build
+[3.605s] running build_py
+[3.606s] running install
+[3.606s] running install_lib
+[3.609s] running install_data
+[3.609s] running install_egg_info
+[3.612s] removing '/home/hello-robot/hello_robot_awong/install/stretch_funmap/lib/python3.10/site-packages/stretch_funmap-0.0.0-py3.10.egg-info' (and everything under it)
+[3.612s] Copying ../../../build/stretch_funmap/stretch_funmap.egg-info to /home/hello-robot/hello_robot_awong/install/stretch_funmap/lib/python3.10/site-packages/stretch_funmap-0.0.0-py3.10.egg-info
+[3.614s] running install_scripts
+[3.644s] Installing funmap script to /home/hello-robot/hello_robot_awong/install/stretch_funmap/lib/stretch_funmap
+[3.645s] writing list of installed files to '/home/hello-robot/hello_robot_awong/build/stretch_funmap/install.log'
+[3.681s] Invoked command in '/home/hello-robot/hello_robot_awong/src/stretch_ros2/stretch_funmap' returned '0': PYTHONPATH=/home/hello-robot/hello_robot_awong/build/stretch_funmap/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hello-robot/hello_robot_awong/install/stretch_funmap/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/stretch_funmap build --build-base /home/hello-robot/hello_robot_awong/build/stretch_funmap/build install --record /home/hello-robot/hello_robot_awong/build/stretch_funmap/install.log --single-version-externally-managed install_data
