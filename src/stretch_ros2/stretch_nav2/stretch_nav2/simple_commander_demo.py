@@ -7,6 +7,7 @@ from copy import deepcopy
 
 from geometry_msgs.msg import PoseStamped
 from stretch_nav2.robot_navigator import BasicNavigator, TaskResult
+import hello_helpers.hello_misc as hm
 
 import rclpy
 from rclpy.node import Node
@@ -19,11 +20,21 @@ mounted on the robot to relay the camera feed back to us that can be monitored
 using RViz.
 """
 
+def make_pose(x, y, yaw=0.0, frame='map'):
+    p = PoseStamped()
+    p.header.frame_id = frame
+    p.pose.position.x = x
+    p.pose.position.y = y
+    p.pose.orientation.w = 1.0                      # facing forward
+    return p
+
 
 def main():
     rclpy.init()
 
     navigator = BasicNavigator()
+    # arm = hm.helloNode.quick_create('arm_node')
+
 
     # Security route, probably read in from a file for a real application
     # from either a map or drive and repeat.
@@ -31,7 +42,9 @@ def main():
         [0.0, 0.0],
         [1.86111, -1.2777],
         [0.36101, -2.2544]]
-
+    
+    wrist = 0.20
+    
     # Set our demo's initial pose
     initial_pose = PoseStamped()
     initial_pose.header.frame_id = 'map'
@@ -45,37 +58,45 @@ def main():
     # Wait for navigation to fully activate
     navigator.waitUntilNav2Active()
 
+    # arm.switch_to_trajectory_mode()                 # good hygiene
+    navigator.get_logger().info("Waiting for arm to be ready...")
+    
     # Do security route until dead
     while rclpy.ok():
-        # Send our route
-        route_poses = []
-        pose = PoseStamped()
-        pose.header.frame_id = 'map'
-        pose.header.stamp = navigator.get_clock().now().to_msg()
-        pose.pose.orientation.w = 1.0
-        for pt in security_route[1:]:
-            pose.pose.position.x = pt[0]
-            pose.pose.position.y = pt[1]
-            route_poses.append(deepcopy(pose))
+        for (x, y) in security_route:
+            goal = make_pose(x, y)
+            navigator.goToPose(goal)
         
         nav_start = navigator.get_clock().now()
-        navigator.followWaypoints(route_poses)
-
-        # Do something during our route (e.x. AI detection on camera images for anomalies)
-        # Simply print ETA for the demonstation
+        
         i = 0
         while not navigator.isTaskComplete():
+        #     rclpy.spin_once(arm, timeout_sec=0.1) # keep arm’s callbacks alive
             i += 1
             feedback = navigator.getFeedback()
             if feedback and i % 5 == 0:
-                navigator.get_logger().info('Executing current waypoint: ' +
-                    str(feedback.current_waypoint + 1) + '/' + str(len(route_poses)))
+                navigator.get_logger().info('Executing current waypoint: ')
                 now = navigator.get_clock().now()
 
                 # Some navigation timeout to demo cancellation
                 if now - nav_start > Duration(seconds=600.0):
                     navigator.cancelTask()
+                    
+        # nav_start = navigator.get_clock().now()
+        # navigator.followWaypoints(route_poses)
 
+        if navigator.getResult() != TaskResult.SUCCEEDED:
+            navigator.get_logger().warn("Nav failed, skipping body motion")
+            continue
+        
+        # nav.get_logger().info("Reached (%.2f, %.2f) – moving lift" % (x, y))
+        # arm.move_to_pose({'joint_lift': wrist}, blocking=True)
+        # wrist *= -1                              # bounce up–down
+
+        # move the wrist to a new position once it reaches the waypoint
+        # node.move_to_pose({'joint_lift': wrist_motion_distance}, blocking=True)
+        # wrist_motion_distance *= -1
+        
         # If at end of route, reverse the route to restart
         security_route.reverse()
 
