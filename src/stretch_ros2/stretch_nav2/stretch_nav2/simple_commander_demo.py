@@ -35,14 +35,21 @@ def main():
     navigator = BasicNavigator()
     # arm = hm.helloNode.quick_create('arm_node')
 
-
     # Security route, probably read in from a file for a real application
     # from either a map or drive and repeat.
-    security_route = [
-        [0.0, 0.0],
-        [1.86111, -1.2777],
-        [0.36101, -2.2544]]
-    
+    # If using house map, set to True
+    house_true = True 
+    if house_true:
+        security_route = [
+            [0.0, 0.0],
+            [0.829800, -0.094666],
+            [1.7128, -0.150900]]
+    else: 
+        security_route = [
+            [0.0, 0.0],
+            [1.86111, -1.2777],
+            [0.36101, -2.2544]]
+        
     wrist = 0.20
     
     # Set our demo's initial pose
