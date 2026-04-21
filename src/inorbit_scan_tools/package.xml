@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>inorbit_scan_tools</name>
+  <version>0.0.1</version>
+  <description>Tools to adapt lidar scans for InOrbit visualization.</description>
+
+  <maintainer email="you@example.com">Your Name</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+  <exec_depend>tf2_ros</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
