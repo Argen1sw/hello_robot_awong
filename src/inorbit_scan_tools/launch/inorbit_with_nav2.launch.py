@@ -12,6 +12,7 @@ def generate_launch_description():
     mission_file = LaunchConfiguration('mission_file')
     inorbit_start_command = LaunchConfiguration('inorbit_start_command')
     inorbit_cancel_command = LaunchConfiguration('inorbit_cancel_command')
+    inorbit_status_topic = LaunchConfiguration('inorbit_status_topic')
 
     nav2_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -72,6 +73,11 @@ def generate_launch_description():
             default_value='mission:cancel',
             description='String command on /inorbit/custom_commands that cancels the mission.',
         ),
+        DeclareLaunchArgument(
+            'inorbit_status_topic',
+            default_value='/inorbit/custom_data_0',
+            description='ROS 2-valid topic for mission status key/value publishing.',
+        ),
         DeclareLaunchArgument('initial_x', default_value='-0.389'),
         DeclareLaunchArgument('initial_y', default_value='1.714'),
         DeclareLaunchArgument('initial_yaw', default_value='3.032'),
@@ -103,6 +109,7 @@ def generate_launch_description():
                 'inorbit_start_command': inorbit_start_command,
                 'inorbit_cancel_command': inorbit_cancel_command,
                 'publish_inorbit_status': True,
+                'inorbit_status_topic': inorbit_status_topic,
             }],
             output='screen',
         ),

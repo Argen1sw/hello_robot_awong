@@ -35,6 +35,7 @@ class WaypointMissionController(Node):
         self.declare_parameter('inorbit_start_command', 'mission:start')
         self.declare_parameter('inorbit_cancel_command', 'mission:cancel')
         self.declare_parameter('publish_inorbit_status', True)
+        self.declare_parameter('inorbit_status_topic', '/inorbit/custom_data_0')
 
         self.mission_file = self.get_parameter('mission_file').value
         self.dry_run = bool(self.get_parameter('dry_run').value)
@@ -45,6 +46,7 @@ class WaypointMissionController(Node):
         self.publish_inorbit_status_enabled = bool(
             self.get_parameter('publish_inorbit_status').value
         )
+        self.inorbit_status_topic = self.get_parameter('inorbit_status_topic').value
 
         self.navigator = BasicNavigator()
         self.arm_client = ActionClient(
@@ -68,9 +70,11 @@ class WaypointMissionController(Node):
 
         self.status_pub = self.create_publisher(String, 'status', 10)
         self.active_pub = self.create_publisher(Bool, 'active', 10)
-        self.inorbit_status_pub = self.create_publisher(
-            String, '/inorbit/custom_data/0', 10
-        )
+        self.inorbit_status_pub = None
+        if self.publish_inorbit_status_enabled and self.inorbit_status_topic:
+            self.inorbit_status_pub = self.create_publisher(
+                String, self.inorbit_status_topic, 10
+            )
         self.start_sub = self.create_subscription(Bool, 'start', self.start_callback, 10)
         self.inorbit_command_sub = self.create_subscription(
             String,
@@ -373,7 +377,7 @@ class WaypointMissionController(Node):
         self.active_pub.publish(msg)
 
     def publish_inorbit_kv(self, text):
-        if not self.publish_inorbit_status_enabled:
+        if not self.publish_inorbit_status_enabled or self.inorbit_status_pub is None:
             return
         msg = String()
         msg.data = text
