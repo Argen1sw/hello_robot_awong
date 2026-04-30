@@ -8,17 +8,17 @@ from pathlib import Path
 import rclpy
 import yaml
 from action_msgs.msg import GoalStatus
-from control_msgs.action import FollowJointTrajectory
 from geometry_msgs.msg import PoseStamped
+from hello_helpers.joint_qpos_conversion import JointStateMapping, get_Idx
 from lifecycle_msgs.srv import GetState
 from nav2_msgs.action import NavigateToPose
 from rclpy.action import ActionClient
 from rclpy.duration import Duration
 from rclpy.node import Node
 from sensor_msgs.msg import JointState
+from std_msgs.msg import Float64MultiArray
 from std_msgs.msg import Bool, String
 from std_srvs.srv import Trigger
-from trajectory_msgs.msg import JointTrajectoryPoint
 
 
 def yaw_to_quaternion(yaw):
@@ -54,21 +54,24 @@ class WaypointMissionController(Node):
             NavigateToPose,
             'navigate_to_pose',
         )
-        self.arm_client = ActionClient(
-            self,
-            FollowJointTrajectory,
-            '/stretch_controller/follow_joint_trajectory',
-        )
         self.switch_to_navigation_client = self.create_client(
             Trigger, '/switch_to_navigation_mode'
         )
-        self.switch_to_trajectory_client = self.create_client(
-            Trigger, '/switch_to_trajectory_mode'
+        self.switch_to_position_client = self.create_client(
+            Trigger, '/switch_to_position_mode'
+        )
+        self.activate_streaming_position_client = self.create_client(
+            Trigger, '/activate_streaming_position'
+        )
+        self.deactivate_streaming_position_client = self.create_client(
+            Trigger, '/deactivate_streaming_position'
         )
         self.amcl_state_client = self.create_client(GetState, 'amcl/get_state')
         self.bt_navigator_state_client = self.create_client(
             GetState, 'bt_navigator/get_state'
         )
+        self.joint_pose_pub = self.create_publisher(Float64MultiArray, '/joint_pose_cmd', 10)
+        self.idx = get_Idx('tool_stretch_gripper')
 
         self.joint_state = None
         self.joint_state_lock = threading.Lock()
@@ -107,9 +110,14 @@ class WaypointMissionController(Node):
         )
 
         self.wait_for_client(self.nav_to_pose_client, 'navigate_to_pose action server')
-        self.wait_for_client(self.arm_client, 'trajectory action server')
         self.wait_for_service(self.switch_to_navigation_client, '/switch_to_navigation_mode')
-        self.wait_for_service(self.switch_to_trajectory_client, '/switch_to_trajectory_mode')
+        self.wait_for_service(self.switch_to_position_client, '/switch_to_position_mode')
+        self.wait_for_service(
+            self.activate_streaming_position_client, '/activate_streaming_position'
+        )
+        self.wait_for_service(
+            self.deactivate_streaming_position_client, '/deactivate_streaming_position'
+        )
         self.wait_for_service(self.amcl_state_client, 'amcl/get_state')
         self.wait_for_service(self.bt_navigator_state_client, 'bt_navigator/get_state')
 
@@ -290,10 +298,14 @@ class WaypointMissionController(Node):
 
                 actions = waypoint.get('actions', [])
                 if actions:
-                    self.switch_mode(self.switch_to_trajectory_client, 'trajectory')
-                    for action in actions:
-                        self.raise_if_cancel_requested()
-                        self.execute_action(waypoint_name, action)
+                    self.switch_mode(self.switch_to_position_client, 'position')
+                    self.set_streaming_position(True)
+                    try:
+                        for action in actions:
+                            self.raise_if_cancel_requested()
+                            self.execute_action(waypoint_name, action)
+                    finally:
+                        self.set_streaming_position(False)
 
             self.publish_status('Mission completed successfully.')
             self.publish_inorbit_kv('mission-state=completed')
@@ -345,47 +357,95 @@ class WaypointMissionController(Node):
                 f"[dry_run] Would execute {action_name} with joints={joints}"
             )
         else:
-            self.send_joint_goal(joints, duration)
+            self.send_streaming_pose(joints, duration)
 
         if wait_sec > 0.0:
             time.sleep(wait_sec)
 
-    def send_joint_goal(self, joints, duration):
+    def set_streaming_position(self, enabled):
+        if self.dry_run:
+            self.get_logger().info(
+                f"[dry_run] Would {'activate' if enabled else 'deactivate'} streaming position."
+            )
+            return
+
+        client = (
+            self.activate_streaming_position_client
+            if enabled
+            else self.deactivate_streaming_position_client
+        )
+        action_name = 'activate' if enabled else 'deactivate'
+        future = client.call_async(Trigger.Request())
+        response = self.wait_for_future(future, f'{action_name} streaming position')
+        if response is None or not response.success:
+            raise RuntimeError(
+                f'Failed to {action_name} streaming position: '
+                f'{response.message if response else "no response"}'
+            )
+
+    def get_joint_positions(self):
         with self.joint_state_lock:
             joint_state = self.joint_state
 
         if joint_state is None:
             raise RuntimeError('No joint state received yet.')
 
-        joint_names = list(joints.keys())
-        goal = FollowJointTrajectory.Goal()
-        goal.goal_time_tolerance = Duration(seconds=1.0).to_msg()
-        goal.trajectory.joint_names = joint_names
+        return {
+            name: position
+            for name, position in zip(joint_state.name, joint_state.position)
+        }
 
-        point0 = JointTrajectoryPoint()
-        point0.time_from_start = Duration(seconds=0.0).to_msg()
-        point1 = JointTrajectoryPoint()
-        point1.time_from_start = Duration(seconds=duration).to_msg()
+    def make_qpos_from_joints(self, joints):
+        current = self.get_joint_positions()
+        qpos = [0.0] * self.idx.num_joints
+        qpos[self.idx.ARM] = current.get(
+            'wrist_extension',
+            sum(current.get(joint, 0.0) for joint in JointStateMapping.ROS_ARM_JOINTS),
+        )
+        qpos[self.idx.LIFT] = current.get('joint_lift', 0.0)
+        qpos[self.idx.WRIST_YAW] = current.get('joint_wrist_yaw', 0.0)
+        qpos[self.idx.GRIPPER] = current.get('joint_gripper_finger_left', 0.0)
+        qpos[self.idx.HEAD_PAN] = current.get('joint_head_pan', 0.0)
+        qpos[self.idx.HEAD_TILT] = current.get('joint_head_tilt', 0.0)
+        qpos[self.idx.BASE_TRANSLATE] = 0.0
+        qpos[self.idx.BASE_ROTATE] = 0.0
 
-        for joint_name in joint_names:
-            try:
-                joint_index = joint_state.name.index(joint_name)
-            except ValueError as exc:
-                raise RuntimeError(f'Joint {joint_name} not found in joint state.') from exc
-            point0.positions.append(joint_state.position[joint_index])
-            point1.positions.append(float(joints[joint_name]))
+        joint_to_idx = {
+            'wrist_extension': self.idx.ARM,
+            'joint_lift': self.idx.LIFT,
+            'joint_wrist_yaw': self.idx.WRIST_YAW,
+            'joint_gripper_finger_left': self.idx.GRIPPER,
+            'joint_head_pan': self.idx.HEAD_PAN,
+            'joint_head_tilt': self.idx.HEAD_TILT,
+        }
 
-        goal.trajectory.points = [point0, point1]
+        for joint_name, value in joints.items():
+            if joint_name not in joint_to_idx:
+                raise RuntimeError(f'Unsupported streaming joint: {joint_name}')
+            qpos[joint_to_idx[joint_name]] = float(value)
 
-        send_goal_future = self.arm_client.send_goal_async(goal)
-        goal_handle = self.wait_for_future(send_goal_future, 'trajectory goal submission')
-        if goal_handle is None or not goal_handle.accepted:
-            raise RuntimeError('Trajectory goal was rejected.')
+        return qpos
 
-        result_future = goal_handle.get_result_async()
-        result = self.wait_for_future(result_future, 'trajectory goal result')
-        if result is None or result.status != GoalStatus.STATUS_SUCCEEDED:
-            raise RuntimeError(f'Trajectory action failed with status {result.status if result else "unknown"}.')
+    def wait_for_joint_targets(self, joints, timeout_sec):
+        deadline = time.time() + timeout_sec
+        tolerance = 0.03
+        while time.time() < deadline:
+            self.raise_if_cancel_requested()
+            current = self.get_joint_positions()
+            if all(
+                abs(current.get(joint_name, 0.0) - float(target)) <= tolerance
+                for joint_name, target in joints.items()
+            ):
+                return
+            time.sleep(0.1)
+        self.get_logger().warn('Timed out waiting for joint targets; continuing.')
+
+    def send_streaming_pose(self, joints, duration):
+        qpos = self.make_qpos_from_joints(joints)
+        msg = Float64MultiArray()
+        msg.data = qpos
+        self.joint_pose_pub.publish(msg)
+        self.wait_for_joint_targets(joints, duration + 2.0)
 
     def switch_mode(self, client, mode_name):
         if self.dry_run:
