@@ -1,0 +1,1060 @@
+<div class="md-main" role="main" md-component="main">
+
+<div class="md-main__inner md-grid">
+
+<div class="md-sidebar md-sidebar--primary" md-component="sidebar"
+md-type="navigation">
+
+<div class="md-sidebar__scrollwrap">
+
+<div class="md-sidebar__inner">
+
+<a href="../.." class="md-nav__button md-logo" aria-label="Stretch Docs"
+data-md-component="logo" title="Stretch Docs"><img
+src="../../images/hello_robot_logo_light.png" alt="logo" /></a> Stretch
+Docs
+
+<div class="md-nav__source">
+
+<a href="https://github.com/hello-robot/hello-robot.github.io"
+class="md-source" data-md-component="source"
+title="Go to repository"></a>
+
+<div class="md-source__icon md-icon">
+
+![](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCA0NDggNTEyIj48IS0tISBGb250IEF3ZXNvbWUgRnJlZSA2LjcuMiBieSBAZm9udGF3ZXNvbWUgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbSBMaWNlbnNlIC0gaHR0cHM6Ly9mb250YXdlc29tZS5jb20vbGljZW5zZS9mcmVlIChJY29uczogQ0MgQlkgNC4wLCBGb250czogU0lMIE9GTCAxLjEsIENvZGU6IE1JVCBMaWNlbnNlKSBDb3B5cmlnaHQgMjAyNCBGb250aWNvbnMsIEluYy4tLT48cGF0aCBkPSJNNDM5LjU1IDIzNi4wNSAyNDQgNDAuNDVhMjguODcgMjguODcgMCAwIDAtNDAuODEgMGwtNDAuNjYgNDAuNjMgNTEuNTIgNTEuNTJjMjcuMDYtOS4xNCA1Mi42OCAxNi43NyA0My4zOSA0My42OGw0OS42NiA0OS42NmMzNC4yMy0xMS44IDYxLjE4IDMxIDM1LjQ3IDU2LjY5LTI2LjQ5IDI2LjQ5LTcwLjIxLTIuODctNTYtMzcuMzRMMjQwLjIyIDE5OXYxMjEuODVjMjUuMyAxMi41NCAyMi4yNiA0MS44NSA5LjA4IDU1YTM0LjM0IDM0LjM0IDAgMCAxLTQ4LjU1IDBjLTE3LjU3LTE3LjYtMTEuMDctNDYuOTEgMTEuMjUtNTZ2LTEyM2MtMjAuOC04LjUxLTI0LjYtMzAuNzQtMTguNjQtNDVMMTQyLjU3IDEwMSA4LjQ1IDIzNS4xNGEyOC44NiAyOC44NiAwIDAgMCAwIDQwLjgxbDE5NS42MSAxOTUuNmEyOC44NiAyOC44NiAwIDAgMCA0MC44IDBsMTk0LjY5LTE5NC42OWEyOC44NiAyOC44NiAwIDAgMCAwLTQwLjgxIiAvPjwvc3ZnPg==)
+
+</div>
+
+<div class="md-source__repository">
+
+GitHub
+
+</div>
+
+</div>
+
+<a href="../.." class="md-nav__link"><span class="md-ellipsis"> Home
+</span></a>
+
+<span class="md-ellipsis"> Getting Started </span>
+<span class="md-nav__icon md-icon"></span>
+
+<span class="md-nav__icon md-icon"></span> Getting Started
+
+<a href="../hello_robot/" class="md-nav__link"><span
+class="md-ellipsis"> Hello Robot! </span></a>
+
+<a href="../connecting_to_stretch/" class="md-nav__link"><span
+class="md-ellipsis"> Connecting to Stretch </span></a>
+
+<span class="md-ellipsis"> Robot Overview </span>
+<span class="md-nav__icon md-icon"></span>
+<a href="./" class="md-nav__link md-nav__link--active"><span
+class="md-ellipsis"> Robot Overview </span></a>
+
+<span class="md-nav__icon md-icon"></span> Table of contents
+
+- <a href="#powering-up" class="md-nav__link"><span class="md-ellipsis">
+  Powering Up </span></a>
+- <a href="#turning-off-gamepad-teleoperation" class="md-nav__link"><span
+  class="md-ellipsis"> Turning off Gamepad Teleoperation </span></a>
+- <a href="#system-check" class="md-nav__link"><span class="md-ellipsis">
+  System Check </span></a>
+- <a href="#homing" class="md-nav__link"><span class="md-ellipsis"> Homing
+  </span></a>
+- <a href="#motors-and-joints" class="md-nav__link"><span
+  class="md-ellipsis"> Motors and Joints </span></a>
+  - <a href="#stepper-motors" class="md-nav__link"><span
+    class="md-ellipsis"> Stepper Motors </span></a>
+    - <a href="#base" class="md-nav__link"><span class="md-ellipsis"> Base
+      </span></a>
+    - <a href="#lift-and-arm" class="md-nav__link"><span class="md-ellipsis">
+      Lift and Arm </span></a>
+      - <a href="#contact-sensitivity" class="md-nav__link"><span
+        class="md-ellipsis"> Contact Sensitivity </span></a>
+  - <a href="#dynamixel-motors" class="md-nav__link"><span
+    class="md-ellipsis"> Dynamixel Motors </span></a>
+    - <a href="#head-camera" class="md-nav__link"><span class="md-ellipsis">
+      Head Camera </span></a>
+    - <a href="#dexterous-wrist" class="md-nav__link"><span
+      class="md-ellipsis"> Dexterous Wrist </span></a>
+    - <a href="#gripper" class="md-nav__link"><span class="md-ellipsis">
+      Gripper </span></a>
+    - <a href="#dynamixel-errors-and-reset-tool" class="md-nav__link"><span
+      class="md-ellipsis"> Dynamixel Errors and Reset Tool </span></a>
+- <a href="#sensors" class="md-nav__link"><span class="md-ellipsis">
+  Sensors </span></a>
+  - <a href="#d435if-depth-camera" class="md-nav__link"><span
+    class="md-ellipsis"> D435if Depth Camera </span></a>
+  - <a href="#d405-depth-camera" class="md-nav__link"><span
+    class="md-ellipsis"> D405 Depth Camera </span></a>
+  - <a href="#arducam-wide-angle-color-camera" class="md-nav__link"><span
+    class="md-ellipsis"> Arducam Wide-angle Color Camera </span></a>
+  - <a href="#rplidar-a1" class="md-nav__link"><span class="md-ellipsis">
+    RPLIDAR A1 </span></a>
+  - <a href="#respeaker-microphone-array" class="md-nav__link"><span
+    class="md-ellipsis"> ReSpeaker Microphone Array </span></a>
+  - <a href="#speakers" class="md-nav__link"><span class="md-ellipsis">
+    Speakers </span></a>
+  - <a href="#base-imu" class="md-nav__link"><span class="md-ellipsis"> Base
+    IMU </span></a>
+  - <a href="#wrist-accelerometer" class="md-nav__link"><span
+    class="md-ellipsis"> Wrist Accelerometer </span></a>
+  - <a href="#cliff-sensors" class="md-nav__link"><span class="md-ellipsis">
+    Cliff Sensors </span></a>
+- <a href="#developer-io" class="md-nav__link"><span class="md-ellipsis">
+  Developer I/O </span></a>
+- <a href="#next-steps" class="md-nav__link"><span class="md-ellipsis">
+  Next Steps </span></a>
+
+<a href="../writing_code/" class="md-nav__link"><span
+class="md-ellipsis"> Writing Code </span></a>
+
+<a href="../demos_mapping_and_navigation/" class="md-nav__link"><span
+class="md-ellipsis"> Demo 1 - Mapping &amp; Navigation </span></a>
+
+<a href="../demos_web_teleop/" class="md-nav__link"><span
+class="md-ellipsis"> Demo 2 - Web Teleop </span></a>
+
+<a href="../community_resources/" class="md-nav__link"><span
+class="md-ellipsis"> Community Resources </span></a>
+
+<a href="../getting_help/" class="md-nav__link"><span
+class="md-ellipsis"> Getting help </span></a>
+
+<span class="md-ellipsis"> Hardware Guides </span>
+<span class="md-nav__icon md-icon"></span>
+
+<span class="md-nav__icon md-icon"></span> Hardware Guides
+
+- <a href="../../hardware/safety_guide/" class="md-nav__link"><span
+  class="md-ellipsis"> Safety Guide </span></a>
+- <a href="../../hardware/hardware_guide_stretch_3/"
+  class="md-nav__link"><span class="md-ellipsis"> Stretch 3 Hardware Guide
+  </span></a>
+- <a href="../../hardware/battery_maintenance_guide_se3/"
+  class="md-nav__link"><span class="md-ellipsis"> Battery Maintenance
+  </span></a>
+
+<span class="md-ellipsis"> Software Overview </span>
+<span class="md-nav__icon md-icon"></span>
+
+<span class="md-nav__icon md-icon"></span> Software Overview
+
+<a href="../../software/distributions/" class="md-nav__link"><span
+class="md-ellipsis"> Distributions </span></a>
+
+<a href="../../software/updating_software/" class="md-nav__link"><span
+class="md-ellipsis"> Updating Software </span></a>
+
+<a href="../../software/changelogs/" class="md-nav__link"><span
+class="md-ellipsis"> Changelogs </span></a>
+
+<span class="md-ellipsis"> Installation Tutorials </span>
+<span class="md-nav__icon md-icon"></span>
+
+<span class="md-nav__icon md-icon"></span> Installation Tutorials
+
+- <a href="../../installation/add_new_user/" class="md-nav__link"><span
+  class="md-ellipsis"> Adding a New User </span></a>
+- <a href="../../installation/ros_workspace/" class="md-nav__link"><span
+  class="md-ellipsis"> Updating your ROS Workspace </span></a>
+- <a href="../../installation/robot_install/" class="md-nav__link"><span
+  class="md-ellipsis"> Upgrading your Operating System </span></a>
+
+<span class="md-ellipsis"> Developing with Stretch </span>
+<span class="md-nav__icon md-icon"></span>
+
+<span class="md-nav__icon md-icon"></span> Developing with Stretch
+
+- <a href="../../developing/basics/" class="md-nav__link"><span
+  class="md-ellipsis"> The Basics </span></a>
+- <a href="../../developing/onboot/" class="md-nav__link"><span
+  class="md-ellipsis"> Launching Apps on Boot </span></a>
+
+<span class="md-ellipsis"> Python Tutorials </span>
+<span class="md-nav__icon md-icon"></span>
+
+<span class="md-nav__icon md-icon"></span> Python Tutorials
+
+- <a href="../../python/moving/" class="md-nav__link"><span
+  class="md-ellipsis"> Commanding Stretch to Move </span></a>
+- <a
+  href="https://github.com/hello-robot/stretch_body/blob/master/docs/is_thread_safe/README.md"
+  class="md-nav__link"><span class="md-ellipsis"> Thread Safety
+  </span></a>
+
+<span class="md-ellipsis"> ROS 2 Tutorials </span>
+<span class="md-nav__icon md-icon"></span>
+
+<span class="md-nav__icon md-icon"></span> ROS 2 Tutorials
+
+<a href="../../ros2/getting_started/" class="md-nav__link"><span
+class="md-ellipsis"> Getting Started </span></a>
+
+<span class="md-ellipsis"> ROS 2 Basics </span>
+<span class="md-nav__icon md-icon"></span>
+
+<span class="md-nav__icon md-icon"></span> ROS 2 Basics
+
+- <a href="../../ros2/writing_nodes/" class="md-nav__link"><span
+  class="md-ellipsis"> Creating Packages &amp; Nodes </span></a>
+- <a href="../../ros2/intro_to_ros2/" class="md-nav__link"><span
+  class="md-ellipsis"> Introduction to ROS 2 Client (rclpy) </span></a>
+- <a href="../../ros2/intro_to_hellonode/" class="md-nav__link"><span
+  class="md-ellipsis"> Introduction to HelloNode </span></a>
+
+<a href="../../ros2/stretch_simulation/" class="md-nav__link"><span
+class="md-ellipsis"> Simulation Tutorial </span></a>
+
+<a href="../../ros2/teleoperating_stretch/" class="md-nav__link"><span
+class="md-ellipsis"> Teleoperation </span></a>
+
+<a href="../../ros2/rviz_basics/" class="md-nav__link"><span
+class="md-ellipsis"> RViz Tutorial </span></a>
+
+<a href="../../ros2/follow_joint_trajectory/" class="md-nav__link"><span
+class="md-ellipsis"> Follow Joint Trajectory &amp; Joint States
+</span></a>
+
+<a href="../../ros2/jogging/" class="md-nav__link"><span
+class="md-ellipsis"> Motion Commands via hello_utils </span></a>
+
+<a href="../../ros2/robot_drivers/" class="md-nav__link"><span
+class="md-ellipsis"> Robot Driver </span></a>
+
+<a href="../../ros2/twist_control/" class="md-nav__link"><span
+class="md-ellipsis"> Twist Control </span></a>
+
+<a href="../../ros2/sensors_tutorial/" class="md-nav__link"><span
+class="md-ellipsis"> Sensors Tutorial </span></a>
+
+<span class="md-ellipsis"> Nav Stack Tutorial </span>
+<span class="md-nav__icon md-icon"></span>
+
+<span class="md-nav__icon md-icon"></span> Nav Stack Tutorial
+
+- <a href="../../ros2/navigation_overview/" class="md-nav__link"><span
+  class="md-ellipsis"> Overview </span></a>
+- <a href="../../ros2/navigation_stack/" class="md-nav__link"><span
+  class="md-ellipsis"> Nav2 Basics </span></a>
+- <a href="../../ros2/navigation_simple_commander/"
+  class="md-nav__link"><span class="md-ellipsis"> Nav2 Simple Commander
+  </span></a>
+
+<a href="../../ros2/deep_perception/" class="md-nav__link"><span
+class="md-ellipsis"> Deep Perception </span></a>
+
+<a href="../../ros2/aruco_marker_detection/" class="md-nav__link"><span
+class="md-ellipsis"> ArUco Markers </span></a>
+
+<a href="../../ros2/remote_compute/" class="md-nav__link"><span
+class="md-ellipsis"> Offloading Computation Tutorial </span></a>
+
+<span class="md-ellipsis"> Autonomy Demos </span>
+<span class="md-nav__icon md-icon"></span>
+
+<span class="md-nav__icon md-icon"></span> Autonomy Demos
+
+- <a href="../../ros2/demo_hello_world/" class="md-nav__link"><span
+  class="md-ellipsis"> Hello World </span></a>
+- <a href="../../ros2/demo_grasp_object/" class="md-nav__link"><span
+  class="md-ellipsis"> Grasp Object </span></a>
+- <a href="../../ros2/demo_handover_object/" class="md-nav__link"><span
+  class="md-ellipsis"> Handover Object </span></a>
+- <a href="../../ros2/demo_open_drawer/" class="md-nav__link"><span
+  class="md-ellipsis"> Open Drawer </span></a>
+- <a href="../../ros2/demo_surface_cleaning/" class="md-nav__link"><span
+  class="md-ellipsis"> Surface Cleaning </span></a>
+
+<a href="../../ros2/funmap_tutorial/" class="md-nav__link"><span
+class="md-ellipsis"> FUNMAP Tutorial </span></a>
+
+<span class="md-ellipsis"> Examples </span>
+<span class="md-nav__icon md-icon"></span>
+
+<span class="md-nav__icon md-icon"></span> Examples
+
+- <a href="../../ros2/voice_teleop/" class="md-nav__link"><span
+  class="md-ellipsis"> Voice Teleop </span></a>
+- <a href="../../ros2/speech_to_text/" class="md-nav__link"><span
+  class="md-ellipsis"> Speech to Text </span></a>
+- <a href="../../ros2/lidar_filtering/" class="md-nav__link"><span
+  class="md-ellipsis"> Lidar Based Sensing </span></a>
+- <a href="../../ros2/rviz_markers/" class="md-nav__link"><span
+  class="md-ellipsis"> Custom RViz Marker </span></a>
+- <a href="../../ros2/joint_effort_plotting/" class="md-nav__link"><span
+  class="md-ellipsis"> Effort Value Plotting </span></a>
+- <a href="../../ros2/tf2_transforms/" class="md-nav__link"><span
+  class="md-ellipsis"> Tf2 Listener and Broadcaster </span></a>
+- <a href="../../ros2/realsense_camera/" class="md-nav__link"><span
+  class="md-ellipsis"> Realsense Camera </span></a>
+- <a href="../../ros2/align_to_aruco/" class="md-nav__link"><span
+  class="md-ellipsis"> Align to ArUco Tutorial </span></a>
+- <a href="../../ros2/aruco_marker_detection#aruco-locator-example"
+  class="md-nav__link"><span class="md-ellipsis"> ArUco Locator
+  </span></a>
+- <a href="../../ros2/joint_states/" class="md-nav__link"><span
+  class="md-ellipsis"> Joint States </span></a>
+- <a href="../../ros2/collision_avoidance/" class="md-nav__link"><span
+  class="md-ellipsis"> Collision Avoidance </span></a>
+- <a href="../../ros2/obstacle_avoider/" class="md-nav__link"><span
+  class="md-ellipsis"> Obstacle Avoidance </span></a>
+
+<span class="md-ellipsis"> Simulation </span>
+<span class="md-nav__icon md-icon"></span>
+
+<span class="md-nav__icon md-icon"></span> Simulation
+
+<a href="../../stretch-mujoco/" class="md-nav__link"><span
+class="md-ellipsis"> Stretch Mujoco </span></a>
+
+<a
+href="https://github.com/hello-robot/stretch_ros2/tree/humble/stretch_simulation"
+class="md-nav__link"><span class="md-ellipsis"> Stretch ROS2 Simulation
+</span></a>
+
+<span class="md-ellipsis"> Getting Started </span>
+<span class="md-nav__icon md-icon"></span>
+
+<span class="md-nav__icon md-icon"></span> Getting Started
+
+- <a href="../../stretch-mujoco/docs/getting_started/"
+  class="md-nav__link"><span class="md-ellipsis"> Getting Started Notebook
+  </span></a>
+- <a href="../../stretch-mujoco/docs/using_mujoco_simulator_with_stretch/"
+  class="md-nav__link"><span class="md-ellipsis"> Stretch Mujoco API
+  </span></a>
+- <a
+  href="https://forum.hello-robot.com/t/physical-aspects-of-the-robot-for-simulation/792"
+  class="md-nav__link"><span class="md-ellipsis"> Simulation Parameters
+  </span></a>
+
+<span class="md-ellipsis"> Other Simulators </span>
+<span class="md-nav__icon md-icon"></span>
+
+<span class="md-nav__icon md-icon"></span> Other Simulators
+
+- <a
+  href="https://github.com/CardiffUniversityComputationalRobotics/stretch_ros2"
+  class="md-nav__link"><span class="md-ellipsis"> ROS2 with Gazebo
+  </span></a>
+- <a
+  href="https://github.com/google-deepmind/mujoco_menagerie/tree/main/hello_robot_stretch"
+  class="md-nav__link"><span class="md-ellipsis"> MuJoCo Menagerie
+  </span></a>
+
+<span class="md-ellipsis"> Extending Stretch </span>
+<span class="md-nav__icon md-icon"></span>
+
+<span class="md-nav__icon md-icon"></span> Extending Stretch
+
+- <a href="../../extending_stretch/changing_tools/"
+  class="md-nav__link"><span class="md-ellipsis"> Changing Tools
+  </span></a>
+- <a href="../../extending_stretch/urdf_management/"
+  class="md-nav__link"><span class="md-ellipsis"> URDF Management
+  </span></a>
+- <a href="../../extending_stretch/extending_stretch_additional_hardware/"
+  class="md-nav__link"><span class="md-ellipsis"> Extending Stretch with
+  Additional Hardware </span></a>
+
+<span class="md-ellipsis"> Software Documentation </span>
+<span class="md-nav__icon md-icon"></span>
+
+<span class="md-nav__icon md-icon"></span> Software Documentation
+
+- <a href="../../stretch-body/docs/robot_parameters/"
+  class="md-nav__link"><span class="md-ellipsis"> Robot Parameters
+  </span></a>
+- <a href="../../stretch-body/docs/is_thread_safe/"
+  class="md-nav__link"><span class="md-ellipsis"> Thread-safety Tutorial
+  </span></a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="md-sidebar md-sidebar--secondary" md-component="sidebar"
+md-type="toc">
+
+<div class="md-sidebar__scrollwrap">
+
+<div class="md-sidebar__inner">
+
+<span class="md-nav__icon md-icon"></span> Table of contents
+
+- <a href="#powering-up" class="md-nav__link"><span class="md-ellipsis">
+  Powering Up </span></a>
+- <a href="#turning-off-gamepad-teleoperation" class="md-nav__link"><span
+  class="md-ellipsis"> Turning off Gamepad Teleoperation </span></a>
+- <a href="#system-check" class="md-nav__link"><span class="md-ellipsis">
+  System Check </span></a>
+- <a href="#homing" class="md-nav__link"><span class="md-ellipsis"> Homing
+  </span></a>
+- <a href="#motors-and-joints" class="md-nav__link"><span
+  class="md-ellipsis"> Motors and Joints </span></a>
+  - <a href="#stepper-motors" class="md-nav__link"><span
+    class="md-ellipsis"> Stepper Motors </span></a>
+    - <a href="#base" class="md-nav__link"><span class="md-ellipsis"> Base
+      </span></a>
+    - <a href="#lift-and-arm" class="md-nav__link"><span class="md-ellipsis">
+      Lift and Arm </span></a>
+      - <a href="#contact-sensitivity" class="md-nav__link"><span
+        class="md-ellipsis"> Contact Sensitivity </span></a>
+  - <a href="#dynamixel-motors" class="md-nav__link"><span
+    class="md-ellipsis"> Dynamixel Motors </span></a>
+    - <a href="#head-camera" class="md-nav__link"><span class="md-ellipsis">
+      Head Camera </span></a>
+    - <a href="#dexterous-wrist" class="md-nav__link"><span
+      class="md-ellipsis"> Dexterous Wrist </span></a>
+    - <a href="#gripper" class="md-nav__link"><span class="md-ellipsis">
+      Gripper </span></a>
+    - <a href="#dynamixel-errors-and-reset-tool" class="md-nav__link"><span
+      class="md-ellipsis"> Dynamixel Errors and Reset Tool </span></a>
+- <a href="#sensors" class="md-nav__link"><span class="md-ellipsis">
+  Sensors </span></a>
+  - <a href="#d435if-depth-camera" class="md-nav__link"><span
+    class="md-ellipsis"> D435if Depth Camera </span></a>
+  - <a href="#d405-depth-camera" class="md-nav__link"><span
+    class="md-ellipsis"> D405 Depth Camera </span></a>
+  - <a href="#arducam-wide-angle-color-camera" class="md-nav__link"><span
+    class="md-ellipsis"> Arducam Wide-angle Color Camera </span></a>
+  - <a href="#rplidar-a1" class="md-nav__link"><span class="md-ellipsis">
+    RPLIDAR A1 </span></a>
+  - <a href="#respeaker-microphone-array" class="md-nav__link"><span
+    class="md-ellipsis"> ReSpeaker Microphone Array </span></a>
+  - <a href="#speakers" class="md-nav__link"><span class="md-ellipsis">
+    Speakers </span></a>
+  - <a href="#base-imu" class="md-nav__link"><span class="md-ellipsis"> Base
+    IMU </span></a>
+  - <a href="#wrist-accelerometer" class="md-nav__link"><span
+    class="md-ellipsis"> Wrist Accelerometer </span></a>
+  - <a href="#cliff-sensors" class="md-nav__link"><span class="md-ellipsis">
+    Cliff Sensors </span></a>
+- <a href="#developer-io" class="md-nav__link"><span class="md-ellipsis">
+  Developer I/O </span></a>
+- <a href="#next-steps" class="md-nav__link"><span class="md-ellipsis">
+  Next Steps </span></a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="md-content" md-component="content">
+
+<a
+href="https://github.com/hello-robot/hello-robot.github.io/blob/0.3/docs/getting_started/stretch_hardware_overview.md"
+class="md-content__button md-icon" title="Edit this page"><img
+src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEwIDIwSDZWNGg3djVoNXYzLjFsMi0yVjhsLTYtNkg2Yy0xLjEgMC0yIC45LTIgMnYxNmMwIDEuMS45IDIgMiAyaDR6bTEwLjItN2MuMSAwIC4zLjEuNC4ybDEuMyAxLjNjLjIuMi4yLjYgMCAuOGwtMSAxLTIuMS0yLjEgMS0xYy4xLS4xLjItLjIuNC0uMm0wIDMuOUwxNC4xIDIzSDEydi0yLjFsNi4xLTYuMXoiIC8+PC9zdmc+" /></a>
+
+# Robot Overview<a href="#robot-overview" class="headerlink" title="Anchor link">¶</a>
+
+This guide will walk you through Stretch's hardware from top to bottom,
+including some simple command line tools you can use to interact with
+the robot.
+
+To complete this tutorial, you will need a monitor and keyboard/mouse,
+or a wireless connection to the robot, as discussed in the [previous
+guide](../connecting_to_stretch/).
+
+## Powering Up<a href="#powering-up" class="headerlink" title="Anchor link">¶</a>
+
+Turn on Stretch if the robot isn't already powered on. Because the robot
+is now on, switch the battery charger into "Supply" mode.
+
+<a href="../images/charger_sticker.png" class="glightbox"
+data-type="image" data-width="auto" data-height="auto"
+data-desc-position="bottom"><img src="../images/charger_sticker.png"
+loading="lazy" alt="charger modes" /></a>
+
+If the NUC goes to sleep, it may ask for a password upon waking up. The
+default user login credentials came in the box with the robot.
+
+## Turning off Gamepad Teleoperation<a href="#turning-off-gamepad-teleoperation" class="headerlink"
+title="Anchor link">¶</a>
+
+Out of the box, Stretch is configured to launch the gamepad
+teleoperation demo in the background at startup. While this is running,
+other code cannot use the robot. You will need to free the "robot
+process" so that your code can use it. Open a Terminal window and input
+the following:
+
+<div class="shell-prompt copy highlight">
+
+    stretch_free_robot_process.py
+
+</div>
+
+You can also disable the autoboot feature that starts gamepad teleop
+everytime the robot is booted. Search for 'Startup Applications' from
+the Apps menu. Uncheck the box for 'hello_robot_gamepad_teleop'.
+
+<a href="../images/disable_gamepad_autostart.png" class="glightbox"
+data-type="image" data-width="auto" data-height="auto"
+data-desc-position="bottom"><img
+src="../images/disable_gamepad_autostart.png" loading="lazy"
+alt="disable autostart gamepad teleop" /></a>
+
+## System Check<a href="#system-check" class="headerlink" title="Anchor link">¶</a>
+
+First, let's check the status of our robot. This is a powerful tool that
+runs a series of hardware and software checks to confirm that the system
+is ready for use.
+
+In a Terminal window, run the command:
+
+<div class="shell-prompt copy highlight">
+
+    stretch_system_check.py
+
+</div>
+
+If all checks pass, you know your robot is ready to go.
+
+## Homing<a href="#homing" class="headerlink" title="Anchor link">¶</a>
+
+If your robot needs to be homed, the system check will tell you. The
+homing procedure is a ~30 second procedure run once every time the robot
+is powered on, and it will find the zero position of all of Stretch's
+joints. If you ran the gamepad teleop demo earlier, then you have
+already seen this homing behavior when starting the demo.
+
+To home the robot, first make sure the robot is in a clear position
+where the lift, arm, and wrist can move freely without collisions. In a
+Terminal window, run the command:
+
+<div class="shell-prompt copy highlight">
+
+    stretch_robot_home.py
+
+</div>
+
+The robot will beep when finished. Run a system check one more time -
+the output should now indicate that all of the motors are homed.
+
+The motors will remember their homing state while the robot remains
+powered on - using the Runstop, backdriving the robot, or even
+restarting the PC will not require rehoming.
+
+## Motors and Joints<a href="#motors-and-joints" class="headerlink"
+title="Anchor link">¶</a>
+
+Next, let's explore the robot hardware, starting with the actuators.
+
+### Stepper Motors<a href="#stepper-motors" class="headerlink" title="Anchor link">¶</a>
+
+#### Base<a href="#base" class="headerlink" title="Anchor link">¶</a>
+
+<a href="../images/stretch3_base.png" class="glightbox"
+data-type="image" data-width="auto" data-height="auto"
+data-desc-position="bottom"><img src="../images/stretch3_base.png"
+loading="lazy" alt="stretch 3 base" /></a>
+
+Stretch has a differential-drive base, consisting of two closed-loop
+stepper motors driving the left and right wheels. The third wheel,
+located at the back of the robot, is an passive omni wheel that allows
+motion in any direction.
+
+#### Lift and Arm<a href="#lift-and-arm" class="headerlink" title="Anchor link">¶</a>
+
+<a href="../images/stretch_arm_lift_joint_limits.png" class="glightbox"
+data-type="image" data-width="auto" data-height="auto"
+data-desc-position="bottom"><img
+src="../images/stretch_arm_lift_joint_limits.png" loading="lazy"
+alt="stretch arm and lift joint limits" /></a>
+
+Stretch has a lift degree of freedom that provides vertical translation
+of the arm. It is driven by a closed-loop stepper motor, providing
+smooth and precise motion through a low gear-ratio belt drive.
+
+The arm degree of freedom comprises 5 telescoping links set on rollers.
+Its proprietary drive train is driven by a stepper motor with closed
+loop control and current sensing, allowing contact sensitivity during
+motion.
+
+In combination, the lift, arm, and mobile base translation provide three
+orthogonal axes of motion - in effect, a Cartesian system for
+end-effector placement.
+
+##### Contact Sensitivity<a href="#contact-sensitivity" class="headerlink"
+title="Anchor link">¶</a>
+
+Stretch's lift and arm joints have a contact detection system that we
+call Guarded Contact. This safety feature is designed to limit the
+unwanted forces Stretch could apply to a person or its environment, and
+can be tuned or configured for your application.
+
+<div class="iframe-container">
+
+<div class="iframe">
+
+<div id="player">
+
+</div>
+
+<div class="player-unavailable">
+
+# An error occurred.
+
+<div class="submessage">
+
+Unable to execute JavaScript.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+The Guarded Contact behavior uses current sensing to determine if
+actuator effort exceeds a user-specified threshold during joint motion,
+and enables the safety controller for the joint until a subsequent
+movement command is received.
+
+To test this system out, launch the gamepad demo again, this time by
+running `stretch_gamepad_teleop.py` from the Terminal. Try driving the
+arm and lift joint, then impeding the motion. After a moderate amount of
+force, Stretch should halt the motion. When you're done, quit the
+program by pressing
+<span class="keys"><span class="kbd key-control">Ctrl</span>+<span class="kbd key-c">C</span></span>
+in the Terminal window.
+
+### Dynamixel Motors<a href="#dynamixel-motors" class="headerlink" title="Anchor link">¶</a>
+
+The actuators for the head, wrist, and gripper joints on Stretch are
+Dynamixel servo motors.
+
+#### Head Camera<a href="#head-camera" class="headerlink" title="Anchor link">¶</a>
+
+<div class="iframe-container">
+
+<div class="iframe">
+
+<div id="player">
+
+</div>
+
+<div class="player-unavailable">
+
+# An error occurred.
+
+<div class="submessage">
+
+Unable to execute JavaScript.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+Stretch has a camera module on a pan-tilt mechanism controlled by
+Dynamixel actuators.
+
+| Axis      | Range  |
+|-----------|--------|
+| Head Pan  | 346deg |
+| Head Tilt | 115deg |
+
+<a href="../images/stretch_head_joint_limits.png" class="glightbox"
+data-type="image" data-width="auto" data-height="auto"
+data-desc-position="bottom"><img
+src="../images/stretch_head_joint_limits.png" loading="lazy"
+alt="stretch head joint limits" /></a>
+
+#### Dexterous Wrist<a href="#dexterous-wrist" class="headerlink" title="Anchor link">¶</a>
+
+<div class="iframe-container">
+
+<div class="iframe">
+
+<div id="player">
+
+</div>
+
+<div class="player-unavailable">
+
+# An error occurred.
+
+<div class="submessage">
+
+Unable to execute JavaScript.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+Stretch has a three degree-of-freedom wrist with yaw, pitch, and roll
+actuation. All of these joints use Dynamixel actuators.
+
+| Axis | Range | Graphic |
+|----|----|----|
+| Wrist Yaw | 340deg | <a href="../images/stretch_yaw_joint_limits.png" class="glightbox"
+data-type="image" data-width="auto" data-height="auto"
+data-desc-position="bottom"><img
+src="../images/stretch_yaw_joint_limits.png" loading="lazy" /></a> |
+| Wrist Pitch | 100deg | <a href="../images/stretch_pitch_joint_limits.png" class="glightbox"
+data-type="image" data-width="auto" data-height="auto"
+data-desc-position="bottom"><img
+src="../images/stretch_pitch_joint_limits.png" loading="lazy" /></a> |
+| Wrist Roll | 340deg | <a href="../images/stretch_roll_joint_limits.png" class="glightbox"
+data-type="image" data-width="auto" data-height="auto"
+data-desc-position="bottom"><img
+src="../images/stretch_roll_joint_limits.png" loading="lazy" /></a> |
+
+#### Gripper<a href="#gripper" class="headerlink" title="Anchor link">¶</a>
+
+<div class="iframe-container">
+
+<div class="iframe">
+
+<div id="player">
+
+</div>
+
+<div class="player-unavailable">
+
+# An error occurred.
+
+<div class="submessage">
+
+Unable to execute JavaScript.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+The compliant gripper is a robust and compliant single-degree-of-freedom
+tool. A Dynamixel actuator drives the center of the spring mechanism,
+which causes the outer fingers to flex and provide a grasping force.
+ArUco tags attached to each finger can be detected by the gripper camera
+to provide precise fingertip positions.
+
+#### Dynamixel Errors and Reset Tool<a href="#dynamixel-errors-and-reset-tool" class="headerlink"
+title="Anchor link">¶</a>
+
+While using Stretch, sometimes the Dynamixel motors may end up in an
+error state. The most common causes of this are over-force errors
+(usually from attempting to apply a very high force on one joint for
+more than a couple of seconds) or over-temperature errors (usually from
+attempting to maintain a high force on one joint for an extended period
+of time). When a motor encounters this error, it goes into a
+backdrivable state and stops responding to commands, and the error LED
+on the motor body blinks red.
+
+Powering down the robot and powering it back on will clear this error
+(notably, rebooting the robot PC will NOT as it will not disconnect the
+power). A more convenient way is to run the following command in the
+terminal:
+
+<div class="shell-prompt copy highlight">
+
+    stretch_robot_dynamixel_reboot.py
+
+</div>
+
+This will reboot all of Stretch's Dynamixel motors, resetting their
+error status. Doing this will also clear the homing position from the
+wrist_yaw and gripper joints, so you will want to re-run the
+`stretch_robot_home.py` script after rebooting the servos.
+
+## Sensors<a href="#sensors" class="headerlink" title="Anchor link">¶</a>
+
+Stretch includes a number of sensors that allow it to perceive the
+environment:
+
+- Intel Realsense D435if Active Depth Camera
+- Intel Realsense D405 Passive Stereo Depth Camera
+- Arducam OV9782 Wide-angle Global Shutter Color Camera
+- Slamtec RPLIDAR A1 2D 360deg Lidar
+- Respeaker v2.0 Microphone Array
+- Bosch BNO085 9-DOF IMU
+- Analog ADXL343 Accelerometer
+- Sharp GP2Y0A51SK0F Infrared Cliff Sensors
+
+### D435if Depth Camera<a href="#d435if-depth-camera" class="headerlink"
+title="Anchor link">¶</a>
+
+An Intel RealSense D435if Depth + RGB Camera is attached to the pan-tilt
+apparatus in the robot head. With a wide field of view, range up to 10m,
+active IR projector and global shutter depth sensor, the D435 is an
+ideal camera for indoor robotics applications. The IF model indicates
+that the camera has both an internal IMU, and an IR pass filter to
+improve depth performance.The camera is mounted vertically, so that the
+robot can see its own body and what is ahead of it simultaneously.
+
+To quickly visualize the RGB and depth streams from this camera, you can
+run the following command in the Terminal:
+
+<div class="shell-prompt copy highlight">
+
+    stretch_realsense_visualizer.py
+
+</div>
+
+### D405 Depth Camera<a href="#d405-depth-camera" class="headerlink"
+title="Anchor link">¶</a>
+
+Stretch has a second depth camera attached to its gripper - an Intel
+RealSense D405 Depth Camera. This camera has an ideal range of 7cm to
+50cm, perfect for in-hand manipulation tasks.
+
+<div class="shell-prompt copy highlight">
+
+    stretch_camera_streams_check.py --d405
+
+</div>
+
+### Arducam Wide-angle Color Camera<a href="#arducam-wide-angle-color-camera" class="headerlink"
+title="Anchor link">¶</a>
+
+Stretch has a third camera, attached to the same pan-tilt apparatus as
+the D435if. This smaller camera is an Arducam 1MP RGB camera with a
+wide-angle lens and global shutter. It is primarily useful when
+operating the robot remotely, as we will see in an upcoming [Web
+Interface Demo](../demos_web_teleop/) tutorial.
+
+<div class="shell-prompt copy highlight">
+
+    stretch_camera_streams_check.py --navigation
+
+</div>
+
+### RPLIDAR A1<a href="#rplidar-a1" class="headerlink" title="Anchor link">¶</a>
+
+<a href="../images/stretch3_rplidar.png" class="glightbox"
+data-type="image" data-width="auto" data-height="auto"
+data-desc-position="bottom"><img src="../images/stretch3_rplidar.png"
+loading="lazy" alt="planar lidar" /></a>
+
+On Stretch's mobile base there is a 2D lidar - the Slamtec RPLIDAR A1
+model. This lidar has a range of 0.15-12m and an angular resolution of
+1deg. The lidar spins when in use, and can be turned on and off
+programatically.
+
+<div class="shell-prompt copy highlight">
+
+    stretch_rp_lidar_jog.py --motor_on
+
+</div>
+
+In an upcoming [Mapping & Navigation
+Demo](../demos_mapping_and_navigation/) tutorial, we will learn how to
+map an area and navigate through it autonomously using the lidar.
+
+### ReSpeaker Microphone Array<a href="#respeaker-microphone-array" class="headerlink"
+title="Anchor link">¶</a>
+
+<a href="../images/stretch3_respeaker.png" class="glightbox"
+data-type="image" data-width="auto" data-height="auto"
+data-desc-position="bottom"><img src="../images/stretch3_respeaker.png"
+loading="lazy" alt="microphone array" /></a>
+
+On the top of the robot head, there is a ReSpeaker v2.0 Microphone
+Array, a far-field array of four microphones capable of detecting voices
+up to 5m away. The 12 RGB LEDs in the light ring are programmable. By
+default, a simple audio localization algorithm illuminates the LEDs when
+noise is made near the robot and highlights the single LED closest to
+the direction of sound.
+
+<div class="shell-prompt copy highlight">
+
+    stretch_respeaker_test.py
+
+</div>
+
+### Speakers<a href="#speakers" class="headerlink" title="Anchor link">¶</a>
+
+<a href="../images/stretch3_speakers.png" class="glightbox"
+data-type="image" data-width="auto" data-height="auto"
+data-desc-position="bottom"><img src="../images/stretch3_speakers.png"
+loading="lazy" alt="speakers" /></a>
+
+Also on the robot head are a pair of stereo speakers for audio output.
+On the top of the head, next to the USB port, is a rotary knob that you
+can turn to adjust the volume.
+
+<a href="../images/stretch3_volumeknob.png" class="glightbox"
+data-type="image" data-width="auto" data-height="auto"
+data-desc-position="bottom"><img src="../images/stretch3_volumeknob.png"
+loading="lazy" alt="volume knob" /></a>
+
+To quickly test the speaker output, run the following command:
+
+<div class="shell-prompt copy highlight">
+
+    stretch_audio_test.py
+
+</div>
+
+### Base IMU<a href="#base-imu" class="headerlink" title="Anchor link">¶</a>
+
+The mobile base has a 9-DoF IMU using the Bosch BNO085 chipset. This is
+the same chipset used on the [Adafruit IMU fusion
+board](https://www.adafruit.com/product/4754).
+
+<a href="../images/stretch2_base_imu.jpg" class="glightbox"
+data-type="image" data-width="auto" data-height="auto"
+data-desc-position="bottom"><img src="../images/stretch2_base_imu.jpg"
+loading="lazy" alt="Stretch 2 IMU" /></a>
+
+The IMU combines an accelerometer with a gyroscope and magnetometer, to
+measure the robot base's velocity, orientation, and rotation with
+respect to gravity.
+
+<div class="shell-prompt copy highlight">
+
+    stretch_pimu_scope.py --gx
+
+</div>
+
+### Wrist Accelerometer<a href="#wrist-accelerometer" class="headerlink"
+title="Anchor link">¶</a>
+
+The wrist includes a 3 axis accelerometer using the Analog
+[ADXL343](https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL343.pdf)
+chipset which provides bump and tap detection capabilities. The sensor
+is mounted inside the distal link of the arm.
+
+<div class="shell-prompt copy highlight">
+
+    stretch_wacc_scope.py --ax
+
+</div>
+
+### Cliff Sensors<a href="#cliff-sensors" class="headerlink" title="Anchor link">¶</a>
+
+Stretch has four Sharp GP2Y0A51SK0F IR cliff sensors pointed toward the
+floor. These report the distance to the floor, allowing for the
+detection of thresholds, stair edges, etc.
+
+While these sensors are calibrated at the Hello Robot factory, their
+readings are highly dependent on the type of floor surface where Stretch
+is being used. These sensors can be calibrated to the robot's new
+environment.
+
+Because using these sensors to detect hazardous terrain relies on
+several external factors (e.g. floor surface, velocity of the robot,
+type of obstacle) and can be risky for the robot and those around it,
+cliff detection is disabled by default.
+
+<div class="shell-prompt copy highlight">
+
+    stretch_pimu_scope.py --cliff
+
+</div>
+
+## Developer I/O<a href="#developer-io" class="headerlink" title="Anchor link">¶</a>
+
+Stretch contains several additional ports connected to the onboard PC
+that can be used for additional hardware or accessories:
+
+- In the trunk, there are 4 USB-A 3.2 ports, an Ethernet port, and an
+  HDMI port. If needed, battery (12V @ 5A) power can also be accessed
+  from inside the robot base by removing the rubber plug in the side of
+  the trunk.
+
+  - <a href="../images/stretch3_trunk_labeled.png" class="glightbox"
+    data-type="image" data-width="auto" data-height="auto"
+    data-desc-position="bottom"><img
+    src="../images/stretch3_trunk_labeled.png" loading="lazy" width="500"
+    alt="Stretch 3 trunk up-close" /></a>
+
+- In the shoulder, there is a USB-A 2.0 port and battery (12V @ 3A)
+  power.
+
+  - <a href="../images/stretch3_shoulder_labeled.png" class="glightbox"
+    data-type="image" data-width="auto" data-height="auto"
+    data-desc-position="bottom"><img
+    src="../images/stretch3_shoulder_labeled.png" loading="lazy" width="500"
+    alt="Stretch 3 shoulder up-close" /></a>
+
+- At the end-of-arm, there is a USB-A 2.0 port (typically used by the
+  gripper camera), as well as an Arduino that can be accessed through a
+  10-pin JST header (12V @ 500mA, SPI, I2C, and digital IO).
+
+  - <a href="../images/stretch3_endofarm_labeled.png" class="glightbox"
+    data-type="image" data-width="auto" data-height="auto"
+    data-desc-position="bottom"><img
+    src="../images/stretch3_endofarm_labeled.png" loading="lazy" width="500"
+    alt="Stretch 3 end-of-arm up-close" /></a>
+
+- On top of the head, there is a USB-A 2.0 port (typically used by the
+  RGB camera), as well as battery (12V @ 3A) power.
+
+  - <a href="../images/stretch3_head_labeled.png" class="glightbox"
+    data-type="image" data-width="auto" data-height="auto"
+    data-desc-position="bottom"><img
+    src="../images/stretch3_head_labeled.png" loading="lazy" width="500"
+    alt="Stretch 3 head up-close" /></a>
+
+- At the wrist, there's a quick-connect mechanism, as well as a
+  Dynamixel X-Series TTL chain. The Extending Stretch tutorials contain
+  information on designing your own tool for the quick-connect
+  mechanism.
+
+  - <div class="iframe-container">
+
+    <div class="iframe">
+
+    <div id="player">
+
+    </div>
+
+    <div class="player-unavailable">
+
+    # An error occurred.
+
+    <div class="submessage">
+
+    Unable to execute JavaScript.
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+- And there's threaded mounting points on the base, shoulder, head, and
+  wrist.
+
+## Next Steps<a href="#next-steps" class="headerlink" title="Anchor link">¶</a>
+
+In the next tutorial, [Writing Code](../writing_code/), we will write a
+simple Python program to actuate all of the different joints of the
+robot.
+
+------------------------------------------------------------------------
+
+<div align="center">
+
+All materials are Copyright 2020-2024 by Hello Robot Inc. Hello Robot
+and Stretch are registered trademarks.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
