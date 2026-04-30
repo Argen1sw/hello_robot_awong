@@ -10,13 +10,14 @@ import yaml
 from action_msgs.msg import GoalStatus
 from control_msgs.action import FollowJointTrajectory
 from geometry_msgs.msg import PoseStamped
+from lifecycle_msgs.srv import GetState
+from nav2_msgs.action import NavigateToPose
 from rclpy.action import ActionClient
 from rclpy.duration import Duration
 from rclpy.node import Node
 from sensor_msgs.msg import JointState
 from std_msgs.msg import Bool, String
 from std_srvs.srv import Trigger
-from stretch_nav2.robot_navigator import BasicNavigator, TaskResult
 from trajectory_msgs.msg import JointTrajectoryPoint
 
 
@@ -48,7 +49,11 @@ class WaypointMissionController(Node):
         )
         self.inorbit_status_topic = self.get_parameter('inorbit_status_topic').value
 
-        self.navigator = BasicNavigator()
+        self.nav_to_pose_client = ActionClient(
+            self,
+            NavigateToPose,
+            'navigate_to_pose',
+        )
         self.arm_client = ActionClient(
             self,
             FollowJointTrajectory,
@@ -60,6 +65,10 @@ class WaypointMissionController(Node):
         self.switch_to_trajectory_client = self.create_client(
             Trigger, '/switch_to_trajectory_mode'
         )
+        self.amcl_state_client = self.create_client(GetState, 'amcl/get_state')
+        self.bt_navigator_state_client = self.create_client(
+            GetState, 'bt_navigator/get_state'
+        )
 
         self.joint_state = None
         self.joint_state_lock = threading.Lock()
@@ -67,6 +76,8 @@ class WaypointMissionController(Node):
         self.mission_running = False
         self.mission_lock = threading.Lock()
         self.autostart_timer = None
+        self.nav_goal_handle = None
+        self.nav_result_future = None
 
         self.status_pub = self.create_publisher(String, 'status', 10)
         self.active_pub = self.create_publisher(Bool, 'active', 10)
@@ -95,9 +106,12 @@ class WaypointMissionController(Node):
             10,
         )
 
+        self.wait_for_client(self.nav_to_pose_client, 'navigate_to_pose action server')
         self.wait_for_client(self.arm_client, 'trajectory action server')
         self.wait_for_service(self.switch_to_navigation_client, '/switch_to_navigation_mode')
         self.wait_for_service(self.switch_to_trajectory_client, '/switch_to_trajectory_mode')
+        self.wait_for_service(self.amcl_state_client, 'amcl/get_state')
+        self.wait_for_service(self.bt_navigator_state_client, 'bt_navigator/get_state')
 
         self.mission = self.load_mission(self.mission_file)
         self.publish_active(False)
@@ -112,7 +126,6 @@ class WaypointMissionController(Node):
             )
 
     def destroy_node(self):
-        self.navigator.destroy_node()
         super().destroy_node()
 
     def wait_for_client(self, client, description):
@@ -130,6 +143,39 @@ class WaypointMissionController(Node):
         if result is None:
             raise RuntimeError(f'No result returned for {description}.')
         return result
+
+    def wait_for_node_active(self, client, node_name):
+        req = GetState.Request()
+        state = 'unknown'
+        while state != 'active':
+            future = client.call_async(req)
+            response = self.wait_for_future(future, f'{node_name} state')
+            state = response.current_state.label
+            if state != 'active':
+                self.get_logger().info(f'Waiting for {node_name} to become active...')
+                time.sleep(1.0)
+
+    def wait_for_nav2_active(self):
+        self.wait_for_node_active(self.amcl_state_client, 'amcl')
+        self.wait_for_node_active(self.bt_navigator_state_client, 'bt_navigator')
+        self.get_logger().info('Nav2 is ready for use!')
+
+    def cancel_navigation_task(self):
+        if self.nav_goal_handle is None:
+            return
+        future = self.nav_goal_handle.cancel_goal_async()
+        self.wait_for_future(future, 'navigation cancel')
+
+    def start_navigation(self, pose):
+        goal_msg = NavigateToPose.Goal()
+        goal_msg.pose = pose
+        send_goal_future = self.nav_to_pose_client.send_goal_async(goal_msg)
+        self.nav_goal_handle = self.wait_for_future(
+            send_goal_future, 'navigation goal submission'
+        )
+        if self.nav_goal_handle is None or not self.nav_goal_handle.accepted:
+            raise RuntimeError('Navigation goal was rejected.')
+        self.nav_result_future = self.nav_goal_handle.get_result_async()
 
     def load_mission(self, mission_file):
         mission_path = Path(mission_file)
@@ -171,7 +217,7 @@ class WaypointMissionController(Node):
                     self.get_logger().info('InOrbit cancel command ignored: mission is not running.')
                     return
                 self.cancel_requested = True
-            self.navigator.cancelTask()
+            self.cancel_navigation_task()
             self.publish_status('Mission cancel requested from InOrbit command.')
 
     def trigger_callback(self, request, response):
@@ -190,7 +236,7 @@ class WaypointMissionController(Node):
                 return response
             self.cancel_requested = True
 
-        self.navigator.cancelTask()
+        self.cancel_navigation_task()
         self.publish_status('Mission cancel requested.')
         response.success = True
         response.message = 'Mission cancel requested.'
@@ -221,7 +267,7 @@ class WaypointMissionController(Node):
             self.publish_inorbit_kv('mission=waypoint_mission')
             self.publish_inorbit_kv('mission-state=starting')
             if not self.dry_run:
-                self.navigator.waitUntilNav2Active()
+                self.wait_for_nav2_active()
 
             for index, waypoint in enumerate(self.mission['waypoints'], start=1):
                 self.raise_if_cancel_requested()
@@ -239,8 +285,7 @@ class WaypointMissionController(Node):
                         f"[dry_run] Would navigate to {waypoint_name}: {waypoint['pose']}"
                     )
                 else:
-                    if not self.navigator.goToPose(goal):
-                        raise RuntimeError(f'Navigation goal rejected for {waypoint_name}.')
+                    self.start_navigation(goal)
                     self.wait_for_navigation_result(waypoint_name)
 
                 actions = waypoint.get('actions', [])
@@ -268,16 +313,20 @@ class WaypointMissionController(Node):
             raise RuntimeError('Mission canceled.')
 
     def wait_for_navigation_result(self, waypoint_name):
-        while not self.navigator.isTaskComplete():
+        while self.nav_result_future is not None and not self.nav_result_future.done():
             self.raise_if_cancel_requested()
-            feedback = self.navigator.getFeedback()
-            if feedback is not None:
-                self.get_logger().debug(f'Navigation feedback received for {waypoint_name}.')
             time.sleep(0.1)
 
-        result = self.navigator.getResult()
-        if result != TaskResult.SUCCEEDED:
-            raise RuntimeError(f'Navigation to {waypoint_name} ended with result {result}.')
+        if self.nav_result_future is None:
+            raise RuntimeError(f'Navigation to {waypoint_name} did not start correctly.')
+
+        result = self.wait_for_future(self.nav_result_future, 'navigation result')
+        self.nav_result_future = None
+        self.nav_goal_handle = None
+        if result.status != GoalStatus.STATUS_SUCCEEDED:
+            raise RuntimeError(
+                f'Navigation to {waypoint_name} ended with status {result.status}.'
+            )
 
     def execute_action(self, waypoint_name, action):
         joints = action.get('joints', {})
@@ -354,7 +403,7 @@ class WaypointMissionController(Node):
     def make_pose(self, pose_data):
         pose = PoseStamped()
         pose.header.frame_id = 'map'
-        pose.header.stamp = self.navigator.get_clock().now().to_msg()
+        pose.header.stamp = self.get_clock().now().to_msg()
         pose.pose.position.x = float(pose_data['x'])
         pose.pose.position.y = float(pose_data['y'])
         pose.pose.position.z = 0.0
