@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'scan_frame_republisher = inorbit_scan_tools.scan_frame_republisher:main',
+            'initial_pose_publisher = inorbit_scan_tools.initial_pose_publisher:main',
         ],
     },
 )
