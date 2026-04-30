@@ -92,6 +92,12 @@ class WaypointMissionController(Node):
         self.start_sub = self.create_subscription(Bool, 'start', self.start_callback, 10)
         self.inorbit_command_sub = self.create_subscription(
             String,
+            '/inorbit/custom_command',
+            self.inorbit_command_callback,
+            10,
+        )
+        self.inorbit_commands_sub = self.create_subscription(
+            String,
             '/inorbit/custom_commands',
             self.inorbit_command_callback,
             10,
