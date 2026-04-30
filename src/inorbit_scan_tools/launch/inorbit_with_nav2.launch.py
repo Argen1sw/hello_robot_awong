@@ -9,6 +9,9 @@ from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
     map_file = LaunchConfiguration('map')
+    mission_file = LaunchConfiguration('mission_file')
+    inorbit_start_command = LaunchConfiguration('inorbit_start_command')
+    inorbit_cancel_command = LaunchConfiguration('inorbit_cancel_command')
 
     nav2_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -50,6 +53,25 @@ def generate_launch_description():
             ],
             description='Full path to the Nav2 map YAML file',
         ),
+        DeclareLaunchArgument(
+            'mission_file',
+            default_value=PathJoinSubstitution([
+                FindPackageShare('inorbit_scan_tools'),
+                'config',
+                'waypoint_mission.yaml',
+            ]),
+            description='Full path to the mission YAML file.',
+        ),
+        DeclareLaunchArgument(
+            'inorbit_start_command',
+            default_value='mission:start',
+            description='String command on /inorbit/custom_commands that starts the mission.',
+        ),
+        DeclareLaunchArgument(
+            'inorbit_cancel_command',
+            default_value='mission:cancel',
+            description='String command on /inorbit/custom_commands that cancels the mission.',
+        ),
         DeclareLaunchArgument('initial_x', default_value='-0.389'),
         DeclareLaunchArgument('initial_y', default_value='1.714'),
         DeclareLaunchArgument('initial_yaw', default_value='3.032'),
@@ -66,6 +88,21 @@ def generate_launch_description():
                 'y': LaunchConfiguration('initial_y'),
                 'yaw': LaunchConfiguration('initial_yaw'),
                 'delay_sec': 9.0,
+            }],
+            output='screen',
+        ),
+        Node(
+            package='inorbit_scan_tools',
+            executable='waypoint_mission',
+            name='waypoint_mission',
+            parameters=[{
+                'mission_file': mission_file,
+                'dry_run': False,
+                'autostart': False,
+                'autostart_delay_sec': 0.0,
+                'inorbit_start_command': inorbit_start_command,
+                'inorbit_cancel_command': inorbit_cancel_command,
+                'publish_inorbit_status': True,
             }],
             output='screen',
         ),

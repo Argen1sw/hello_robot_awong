@@ -1,0 +1,42 @@
+waypoints:
+  - name: waypoint_1
+    pose:
+      x: 2.359
+      y: 1.689
+      yaw: -0.196
+    actions:
+      - name: waypoint_1_pose
+        duration: 3.0
+        joints:
+          joint_lift: 0.9
+          wrist_extension: 0.2
+          joint_wrist_yaw: 0.0
+          joint_gripper_finger_left: -0.3
+
+  - name: waypoint_2
+    pose:
+      x: 3.431
+      y: 0.185
+      yaw: -0.243
+    actions:
+      - name: waypoint_2_pose
+        duration: 3.0
+        joints:
+          joint_lift: 0.9
+          wrist_extension: 0.4
+          joint_wrist_yaw: 0.0
+          joint_gripper_finger_left: -0.12
+
+  - name: waypoint_3
+    pose:
+      x: 3.456
+      y: -1.375
+      yaw: -1.258
+    actions:
+      - name: waypoint_3_pose
+        duration: 3.0
+        joints:
+          joint_lift: 0.9
+          wrist_extension: 0.4
+          joint_wrist_yaw: 0.0
+          joint_gripper_finger_left: 0.0
