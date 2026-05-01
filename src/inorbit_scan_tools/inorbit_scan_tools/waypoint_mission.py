@@ -75,6 +75,8 @@ class WaypointMissionController(Node):
 
         self.joint_state = None
         self.joint_state_lock = threading.Lock()
+        self.is_homed = None
+        self.is_homed_event = threading.Event()
         self.cancel_requested = False
         self.mission_running = False
         self.mission_lock = threading.Lock()
@@ -112,6 +114,12 @@ class WaypointMissionController(Node):
             JointState,
             '/stretch/joint_states',
             self.joint_states_callback,
+            10,
+        )
+        self.is_homed_sub = self.create_subscription(
+            Bool,
+            '/is_homed',
+            self.is_homed_callback,
             10,
         )
 
@@ -211,6 +219,10 @@ class WaypointMissionController(Node):
         with self.joint_state_lock:
             self.joint_state = joint_state
 
+    def is_homed_callback(self, msg):
+        self.is_homed = bool(msg.data)
+        self.is_homed_event.set()
+
     def start_callback(self, msg):
         if msg.data:
             started, message = self.start_mission()
@@ -277,6 +289,10 @@ class WaypointMissionController(Node):
     def run_mission(self):
         try:
             self.publish_active(True)
+            self.publish_status('Waiting for robot to be homed.')
+            self.publish_inorbit_kv('mission-state=homing')
+            if not self.dry_run:
+                self.wait_for_robot_homed()
             self.publish_status('Waiting for Nav2 to become active.')
             self.publish_inorbit_kv('mission=waypoint_mission')
             self.publish_inorbit_kv('mission-state=starting')
@@ -331,6 +347,18 @@ class WaypointMissionController(Node):
     def raise_if_cancel_requested(self):
         if self.cancel_requested:
             raise RuntimeError('Mission canceled.')
+
+    def wait_for_robot_homed(self):
+        while rclpy.ok():
+            self.raise_if_cancel_requested()
+            if self.is_homed is True:
+                return
+            if not self.is_homed_event.wait(timeout=1.0):
+                self.get_logger().info('Waiting for /is_homed...')
+                continue
+            if self.is_homed is False:
+                self.get_logger().info('Robot is not homed yet. Waiting for homing to complete...')
+                time.sleep(1.0)
 
     def wait_for_navigation_result(self, waypoint_name):
         while self.nav_result_future is not None and not self.nav_result_future.done():

@@ -10,6 +10,9 @@ from launch_ros.substitutions import FindPackageShare
 def generate_launch_description():
     map_file = LaunchConfiguration('map')
     mission_file = LaunchConfiguration('mission_file')
+    home_robot_on_startup = LaunchConfiguration('home_robot_on_startup')
+    home_start_delay_sec = LaunchConfiguration('home_start_delay_sec')
+    home_wait_timeout_sec = LaunchConfiguration('home_wait_timeout_sec')
     inorbit_start_command = LaunchConfiguration('inorbit_start_command')
     inorbit_cancel_command = LaunchConfiguration('inorbit_cancel_command')
     inorbit_status_topic = LaunchConfiguration('inorbit_status_topic')
@@ -64,6 +67,21 @@ def generate_launch_description():
             description='Full path to the mission YAML file.',
         ),
         DeclareLaunchArgument(
+            'home_robot_on_startup',
+            default_value='true',
+            description='Home the robot once at startup if /is_homed is false.',
+        ),
+        DeclareLaunchArgument(
+            'home_start_delay_sec',
+            default_value='2.0',
+            description='Delay before checking /is_homed and optionally calling /home_the_robot.',
+        ),
+        DeclareLaunchArgument(
+            'home_wait_timeout_sec',
+            default_value='90.0',
+            description='How long to wait for /is_homed to become true after homing starts.',
+        ),
+        DeclareLaunchArgument(
             'inorbit_start_command',
             default_value='mission:start',
             description='String command on /inorbit/custom_commands that starts the mission.',
@@ -94,6 +112,18 @@ def generate_launch_description():
                 'y': LaunchConfiguration('initial_y'),
                 'yaw': LaunchConfiguration('initial_yaw'),
                 'delay_sec': 9.0,
+            }],
+            output='screen',
+        ),
+        Node(
+            package='inorbit_scan_tools',
+            executable='ensure_homed',
+            name='ensure_homed',
+            parameters=[{
+                'auto_home': home_robot_on_startup,
+                'startup_delay_sec': home_start_delay_sec,
+                'wait_for_homed_timeout_sec': home_wait_timeout_sec,
+                'exit_after_homing': True,
             }],
             output='screen',
         ),

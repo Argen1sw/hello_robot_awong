@@ -23,9 +23,12 @@ The custom integration lives in `src/inorbit_scan_tools`.
 Current components:
 
 - `inorbit_with_nav2.launch.py`
-  Launches Nav2, scan fixing, initial pose publishing, and the mission node.
+  Launches Nav2, scan fixing, startup homing, initial pose publishing, and the
+  mission node.
 - `inorbit_scan_fix.launch.py`
   Republishes lidar scans and provides the corrected TF frame for the agent side.
+- `ensure_homed.py`
+  Checks `/is_homed` and calls `/home_the_robot` once at startup when needed.
 - `initial_pose_publisher.py`
   Publishes `/initialpose` once to seed localization.
 - `waypoint_mission.py`
@@ -59,14 +62,16 @@ singular and plural topic names for compatibility.
 
 The mission flow is:
 
-1. Wait for Nav2 to be active.
-2. Switch the driver to `navigation` mode.
-3. Navigate to a configured waypoint.
-4. Switch the driver to `position` mode.
-5. Activate streaming position control.
-6. Publish a joint pose on `/joint_pose_cmd`.
-7. Deactivate streaming position control.
-8. Repeat for the remaining waypoints.
+1. Wait for the robot to be homed.
+2. Wait for Nav2 to be active.
+3. Switch the driver to `navigation` mode.
+4. Navigate to a configured waypoint.
+5. Switch the driver to `position` mode.
+6. Activate streaming position control.
+7. Publish a joint pose on `/joint_pose_cmd`.
+8. Deactivate streaming position control.
+9. Switch the driver back to `navigation`.
+10. Repeat for the remaining waypoints.
 
 ## Why Streaming Position Is Used
 
@@ -147,6 +152,9 @@ Useful launch arguments:
 
 - `map`
 - `mission_file`
+- `home_robot_on_startup`
+- `home_start_delay_sec`
+- `home_wait_timeout_sec`
 - `inorbit_start_command`
 - `inorbit_cancel_command`
 - `inorbit_status_topic`
@@ -218,6 +226,19 @@ ros2 topic echo /inorbit/custom_data_0
   `/inorbit/custom_data_0`.
 - Nav2 base motion is working in the current flow.
 - Arm/gripper actions currently execute through streaming position control.
+- Startup homing is handled through the ROS-native `/home_the_robot` service and
+  `/is_homed` topic rather than shelling out to `stretch_robot_home.py`.
+
+## InOrbit Agent Environment
+
+The local InOrbit documentation notes that environment variables required by
+scripts executed by the agent should be placed in:
+
+- `${HOME}/.inorbit/local/agent.env.sh`
+
+That file is relevant if you later decide to have the InOrbit agent execute an
+external script directly. The current repo workflow does not require that for
+robot homing because bringup uses the ROS driver interfaces instead.
 
 ## Recommended Future Cleanup
 
