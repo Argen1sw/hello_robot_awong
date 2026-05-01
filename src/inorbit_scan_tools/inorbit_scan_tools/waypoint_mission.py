@@ -312,6 +312,7 @@ class WaypointMissionController(Node):
                             self.execute_action(waypoint_name, action)
                     finally:
                         self.set_streaming_position(False)
+                        self.switch_mode(self.switch_to_navigation_client, 'navigation')
 
             self.publish_status('Mission completed successfully.')
             self.publish_inorbit_kv('mission-state=completed')
@@ -321,6 +322,7 @@ class WaypointMissionController(Node):
             failed_state = 'canceled' if self.cancel_requested else 'failed'
             self.publish_inorbit_kv(f'mission-state={failed_state}')
         finally:
+            self.restore_navigation_mode()
             self.publish_active(False)
             self.publish_inorbit_kv('mission=idle')
             with self.mission_lock:
@@ -464,6 +466,17 @@ class WaypointMissionController(Node):
             raise RuntimeError(
                 f'Failed to switch to {mode_name} mode: '
                 f'{response.message if response else "no response"}'
+            )
+
+    def restore_navigation_mode(self):
+        if self.dry_run:
+            return
+
+        try:
+            self.switch_mode(self.switch_to_navigation_client, 'navigation')
+        except Exception as exc:
+            self.get_logger().warn(
+                f'Best-effort navigation mode restore failed: {exc}'
             )
 
     def make_pose(self, pose_data):
